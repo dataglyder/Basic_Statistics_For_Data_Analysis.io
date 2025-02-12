@@ -3,7 +3,12 @@ Data Analysts and Scientists adopt some  statistics in their applications to sol
 
 ## Table
 I didn't mean the type your PC is sitting on right now; neither I'm I talking about the type where you set and enjoy your meal! Just kidding. Statistical tables are structured ways of presenting data in rows and columns.
-![A Sample Table in Rows and Columns]
+
+**A Table with Rows and Columns**
+
+<span
+style="display:inline; text-align:center">
+![A Sample Table in Rows and Columns](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/Screenshot%202025-02-09%20101732.png)</span>
 
 
 How the data is organized in the table can give the table a slightly unique name such as:
