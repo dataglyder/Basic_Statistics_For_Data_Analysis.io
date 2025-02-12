@@ -3,7 +3,9 @@ Data Analysts and Scientists adopt some  statistics in their applications to sol
 
 ## Table
 I didn't mean the type your PC is sitting on right now; neither I'm I talking about the type where you set and enjoy your meal! Just kidding. Statistical tables are structured ways of presenting data in rows and columns.
-![A Sample Table in Rows and Columns]()
+![A Sample Table in Rows and Columns]
+
+
 How the data is organized in the table can give the table a slightly unique name such as:
 ### Frequncy Distribution Table
 This displays the observed data and the total time it occured.
