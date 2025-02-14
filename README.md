@@ -15,7 +15,7 @@ How the data is organized in the table can give the table a slightly unique name
 ### Frequncy Distribution Table
 This displays the observed data and the total time it occured. Imagine that you want to know how mny blue cars pass on your street daily, so, you decided to take daily data of blue cars that pass on your street for one week. Below is a simple frequency table summarising a likely outcome.
 
-![Table 1 Frequency Distribution Table]()
+![Table 1 Frequency Distribution Table](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/freq_table.png)
 
 ### Cummulative Frequency Distribution
 Frequency distribtion table becomes cummulative distribution table by adding the frequencies in a subsequent order as shown below.
