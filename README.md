@@ -6,22 +6,26 @@ I didn't mean the type your PC is sitting on right now; neither I'm I talking ab
 
 **A Table with Rows and Columns**
 
-<span
-style="display:block; text-align:center">
-![A Sample Table in Rows and Columns](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/Screenshot%202025-02-09%20101732.png)</span>
+
+![A Sample Table in Rows and Columns](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/Screenshot%202025-02-09%20101732.png)
 
 
 How the data is organized in the table can give the table a slightly unique name such as: distribution frequency table, contingency table, cummulative frequncy distribution table etc. 
 ### Frequncy Distribution Table
 This displays the observed data and the total time it occured. Imagine that you want to know how mny blue cars pass on your street daily, so, you decided to take daily data of blue cars that pass on your street for one week. Below is a simple frequency table summarising a likely outcome.
 
+***Table 1***
 ![Table 1 Frequency Distribution Table](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/freq_table.png)
 
 ### Cummulative Frequency Distribution
 Frequency distribtion table becomes cummulative distribution table by adding the frequencies in a subsequent order as shown below.
+
+***Table 2***
 ![Table 2 Cummulative Frequency Table](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/cum_freq.png)
 ### Contingency Table
 Contigency tables are used to represent variables that are more than one. Consider a deler who gathers data about his car sales by color so that he could know what quantity to keep in stock by color. The contingency table below might represent data collected. 
+
+***Tabble 3***
 ![Table 3 Contingency Table](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/contingen_table.png)
 ## Descriptive Statistics
 Descriptive statistics involves the use of ***measures of central tendency*** and ***measures of dispersion*** to gain knowledge and also probably make decisions about data.
@@ -32,7 +36,7 @@ It's the average; calculated by adding all the observations and dividing by the 
 
 **Population Mean**
 Assuming you want to know the total number of blues cars that are within your county instead of just your street, all blue cars within your county represent total population of blue cars. It might be challenging to count all these cars at onces but data could be collected from six strategic street within your county, and the average or mean of these data could be computed. This type of mean is called ***population mean miu/mu/meu** ($`\mu`$). Table 4 below represents sample data that might be collected
-![Total blue cars within the County]()
+![Total blue cars within the County](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/pop_mean.png)
 
 $`\mu = 216/6 \simeq 36`$ This could be statistically represented as:
 
