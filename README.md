@@ -19,7 +19,7 @@ This displays the observed data and the total time it occured. Imagine that you 
 
 ### Cummulative Frequency Distribution
 Frequency distribtion table becomes cummulative distribution table by adding the frequencies in a subsequent order as shown below.
-![Table 2 Cummulative Frequency Table]()
+![Table 2 Cummulative Frequency Table](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/cum_freq.png)
 ### Contingency Table
 Contigency tables are used to represent variables that are more than one. Consider a deler who gathers data about his car sales by color so that he could know what quantity to keep in stock by color. The contingency table below might represent data collected. 
 ![Table 3 Contingency Table]()
