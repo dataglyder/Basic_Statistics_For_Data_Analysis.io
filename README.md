@@ -38,7 +38,7 @@ It's the average; calculated by adding all the observations and dividing by the 
 
 **Population Mean**
 
-Assuming you want to know the total number of blue cars that are within your county instead of just your street, all blue cars within your county represent total population of blue cars. It might be challenging to count all these cars at onces but data could be collected from six strategic street within your county, and the average or mean of these data could be computed. This type of mean is called ***population mean miu/mu/meu** ($`\mu`$). Table 4 below represents sample data that might be collected.
+Assuming you want to know the total number of blue cars that are within your county instead of just your street, all blue cars within your county represent total population of blue cars. It might be challenging to count all these cars at onces but let's say there are only 6 streets in your county, data could be collected from these streets within your county, and the average or mean of these data could be computed. This type of mean is called ***population mean miu/mu/meu** ($`\mu`$). Table 4 below represents sample data that might be collected.
 
 ***Table 4***
 ![Total blue cars within the County](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/pop_mean.png)
