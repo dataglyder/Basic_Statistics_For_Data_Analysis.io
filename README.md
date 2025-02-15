@@ -103,13 +103,13 @@ Measures of dispersion indicate the spread of data around the mean. Variance, St
 The variance is the square of the desperse of the data devided by frequency count if dealing with a population or devided by frequency count minus one while dealing with a sample. It could be expressed mathematically as shown below.
 
 **Population Variance**
-$$\sigma=\frac{\sum_{i=1}^N( x_i-\bar{x})^2}{N}$$
+$$\sigma^2=\frac{\sum_{i=1}^N( x_i-\bar{x})^2}{N}$$
+Let's say we want to know the variance in the age of students in a school (population), as in the table below.
 
 **Sample Variance**
-$$s=\frac{\sum_{i=1}^n( x_i-\bar{x})^2}{n-1}$$
+$$s^2=\frac{\sum_{i=1}^n( x_i-\bar{x})^2}{n-1}$$
+Instead of the entire school, let's find the variance in the age of the kindergartners (sample) as in the table below.
 
-Let's say the chairman board of agriculture in Ohio state wants to know the quantity of tomatoes that are consumed in the city of Painesville per month and so, he ordered all grocery stores to turn in their data of tomatoe sales. Assuming there are 12 grocery stores in Painesville, as in the table below, the average sale could be considered as the total population of tomatoes.
-![tomates pop]()
 $`\sum_{i=1}^N( x_i-\bar{x})^2= 178998.9`$
 
 ## Standard Deviation
