@@ -7,7 +7,7 @@ I didn't mean the type your PC is sitting on right now; neither I'm I talking ab
 **A Table with Rows and Columns**
 
 
-![A Sample Table in Rows and Columns](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/Screenshot%202025-02-09%20101732.png)
+![A Sample Table in Rows and Columns]()
 
 
 How the data is organized in the table can give the table a slightly unique name such as: distribution frequency table, contingency table, cummulative frequncy distribution table etc. 
@@ -103,19 +103,49 @@ Measures of dispersion indicate the spread of data around the mean. Variance, St
 The variance is the square of the desperse of the data devided by frequency count if dealing with a population or devided by frequency count minus one while dealing with a sample. It could be expressed mathematically as shown below.
 
 **Population Variance**
-$$\sigma^2=\frac{\sum_{i=1}^N( x_i-\bar{x})^2}{N}$$
-Let's say we want to know the variance in the age of students in a school (population), as in the table below.
+$`\sigma^2=\frac{\sum_{i=1}^N( x_i-\mu)^2}{N}`$
+
+Let's say I want to know the variance of the weight of harvested tomatoes from my garden (population) for seven days , as in the table below.
+
+![tomato_weight]()
+
+$`\sigma^2 = \frac{310.96}{7}`$
+
+$`\sigma^2\simeq44`$
 
 **Sample Variance**
-$$s^2=\frac{\sum_{i=1}^n( x_i-\bar{x})^2}{n-1}$$
-Instead of the entire school, let's find the variance in the age of the kindergartners (sample) as in the table below.
+$`s^2=\frac{\sum_{i=1}^n( x_i-\bar{x})^2}{n-1}`$
 
-$`\sum_{i=1}^N( x_i-\bar{x})^2= 178998.9`$
+As the manager of my department, assuming I want to know the variance in sales of sugar cookie (sample) for  one week as in the table below.
+
+![cookie_table]()
+
+$`s^2=\frac{2192.86}{6}`$
+
+$`s^2\simeq366`$
+
+***Note*** In simple term, each tomato weight is approximately 44 square unit away from the mean while each sugar cookie sale is approximately 366 square unit away from the mean. In other to understand better how far these observations are away from the mean, we take the square root of variance; this, is equivalent to standard deviation.
 
 ## Standard Deviation
+$`\sigma=\sqrt\sigma^2=\sqrt\frac{\sum_{i=1}^N( x_i-\mu)^2}{N}`$ for population standard deviation and $`s=\sqrt s^2=\sqrt\frac{\sum_{i=1}^n( x_i-\bar{x})^2}{n-1}`$ for sample standard deviation
+
+Population standard deviation of tomato weight is:
+
+$`\sigma=\sqrt44`$
+
+$`\sigma= 6.6`$
+
+Sample Standard deviation of cookie sales is:
+
+$`s=\sqrt366`$
+
+$`s=19.1`$
 
 ### Range
 Range is the difference between the highest and the lowest observation in an array of data. The range of $`1, 5, 6, 7, 8, 9, 25`$ is 24. i.e., `$25-1`$
+
+## The Normal Probability Distribution
+
 
 ***To be edited and continued!***
 
