@@ -141,11 +141,43 @@ $`s=\sqrt366`$
 
 $`s=19.1`$
 
+## Application of Standard Deviation
+Consider our ![cookie sale](), imagine that we have a sale of $`$400`$, that would be about 5 standard deviation (4.6) to the right from the mean. While a sale of $`$250`$ would be approximately 3 standard deviation (3.3) from the mean.
+##[Sd and cookie sale]()
+Now, suppose there is a very good day in summer with a lot of parties, and out doors activities and there is a sale of $2000 dollars,  or 3 days inclement weather that resulted into drop in sale say #50 per day. Of course, these might be regarded as outliers; but suppose the bomber sale continue throughout the summer while the low sale period extend to all winter. The measures of central tendency and dispersion might not be ideal enought to give us the best insight into the down, peak and low period within the data; this is where inferencial statistics and the standard normal probability distribution come into play.
+
 ### Range
-Range is the difference between the highest and the lowest observation in an array of data. The range of $`1, 5, 6, 7, 8, 9, 25`$ is 24. i.e., `$25-1`$
+Range is the difference between the highest and the lowest observation in an array of data. The range of $`1, 5, 6, 7, 8, 9, 25`$ is 24. i.e., $`25-1`$
 
 ## The Normal Probability Distribution
+Normal probability distribution is a curve that follows a bell shape. Let's assume our ##[tomatoes harveting]() was at the beginnig of the harvesting period  
+and gradually climed until it reaches the peak of the season and then start declining until the end of the season. The kind of shape gotten from this illustration is the normal distribution curve but with some unique attributes to the real normal ddistibution itself.
 
+**(1)** The total area under the normal distribution is 1
+
+**(2)** The mean is zero and it has standard deviation of 1.
+
+**(3)** The mean and the standard deviation are on the x- axis while the y-axis represents the probability density of the data being analysed.
+
+**(4)** Both ends of the curve extend to infinity
+![Probability Density Curve]()
+
+## Standardizing Data with the Z-score
+In other to use standard normal distribution to make inference about our data, the data must first be standardized with a z-score. using the formular:
+
+z=$`\frac{x-\mu}{\sigma}`$ Where:
+
+z= z-score
+
+x= observation
+
+$`\mu`$ = mean
+
+$`\sigma`$=standard deviation
+***Note*** that population mean $`\mu`$ and population standard deviation $`\sigma`$ are being used because it is assumed that the whole  population is being considered. In a situation where sample from the population is being used (which is mostly the case), standard error replaces standard deviation in the z-score. Therefore, z-score for sampled data will be:
+
+z=$`\frac{x-\bar{x}}{\sigma_{\bar{x}}}`$
+$`\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}`$
 
 ***To be edited and continued!***
 
