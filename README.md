@@ -150,8 +150,7 @@ Now, suppose there is a very good day in summer with a lot of parties, and out d
 Range is the difference between the highest and the lowest observation in an array of data. The range of $`1, 5, 6, 7, 8, 9, 25`$ is 24. i.e., $`25-1`$
 
 ## The Normal Probability Distribution
-Normal probability distribution is a curve that follows a bell shape. Let's assume our ##[tomatoes harveting]() was at the beginnig of the harvesting period  
-and gradually climed until it reaches the peak of the season and then start declining until the end of the season. The kind of shape gotten from this illustration is the normal distribution curve but with some unique attributes to the real normal ddistibution itself.
+Normal probability distribution is a curve that follows a bell shape. Let's assume our [tomates harvesting] is from hectares of  land and was at the beginnig of the harvesting period  and gradually climed until it reaches the peak of the season and then start declining until the end of the season. The kind of shape gotten from this illustration is the normal distribution curve but with some unique attributes to the real normal ddistibution itself.
 
 **(1)** The total area under the normal distribution is 1
 
@@ -177,8 +176,10 @@ $`\sigma`$=standard deviation
 ***Note*** that population mean $`\mu`$ and population standard deviation $`\sigma`$ are being used because it is assumed that the whole  population is being considered. In a situation where sample from the population is being used (which is mostly the case), standard error replaces standard deviation in the z-score. Therefore, z-score for sampled data will be:
 
 z=$`\frac{x-\bar{x}}{\sigma_{\bar{x}}}`$
+
 $`\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}`$
 
+Let's say my tomatoes harvesting truelly follow a normal distribution and several pounds were harvested daily over a period of 1 month. 
 ***To be edited and continued!***
 
 
