@@ -159,6 +159,7 @@ Normal probability distribution is a curve that follows a bell shape. Let's assu
 **(3)** The mean and the standard deviation are on the x- axis while the y-axis represents the probability density of the data being analysed.
 
 **(4)** Both ends of the curve extend to infinity
+**(5)** Starting from 0 (mean) to the right extend to positive infinity while from 0 (mean) extend to negative infinity; the positivity and negativity only indicates that the standdard deviation lies above or below the mean respectively.
 ![Probability Density Curve]()
 
 ## Standardizing Data with the Z-score
@@ -179,7 +180,68 @@ z=$`\frac{x-\bar{x}}{\sigma_{\bar{x}}}`$
 
 $`\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}`$
 
-Let's say my tomatoes harvesting truelly follow a normal distribution and several pounds were harvested daily over a period of 1 month. 
+$`\sigma`$ = population standard deviation
+
+n = number of sample
+
+
+Let's say my tomatoes harvesting truelly follow a normal distribution and several pounds were harvested daily as shown in the table below; resulting in the normal distribution that follows.
+
+![tom_table]()
+
+$`\mu = 1372.72`$
+
+$`\sigma= 823.52`$
+
+![Distribution curve]()
+
+Standard normal distribution has a mean of 0,therefore, the data has to be standardize with the z-score for estimation.
+To check the probability of harvesting 2000lb of tomatoes in a day, we can do:
+$`z=\frac{x-\mu}{\sigma}`$ 
+
+$`z= $`\frac{2000-1372.72}{823.52}`$
+
+$`z=0.7617`$ Meaning 2000lb harvest is only 0.7617 standard deviation away from mean.
+Now, ![check z-score pro]() ![the normal distribution table](https://z-table.com/) could be used to find the probability of harvesting 2000lb of tomatoes. 
+
+
+z-score 0.7617 has a probability of 0.7764 i.e. 77.64% chance of harvesting 2000lb of tomatoes per day.
+
+
+The probability of harvesting 300lb will be
+$`z= \frac{300-1372.72}{823.52}`$
+$`z = -1.3026`$ This means getting a harvest of 300lb is 1.3 standard deviation below the mean. 
+
+Using the normal distribution table, the probability of harvesting 300lb of tomateos is 0.0968 i.e. 9.68%
+
+These values estimated are range of values that extends to the tail of the distribution meaning that harvest could be 2000lb or less, 300lb pounds or less. 
+
+To see if harvest could be greater than 2000lb or 300lb:
+
+$`P(harvest>0.7764) = 1 - 0.7764`$ (since the whole normal distribution area is 1)
+
+$`P(harvest>0.7764)=0.2236 06 22.36%`$
+
+$`$`P(harvest>0.0968)=0.9032 or 90.32%
+
+Both estimates extend to the tail of the distribution. But I want to be certain of specific range or interval; I will need to use confidence interval.
+## Confidence Interval
+Confidence interval is a range of values for estimating population parameters and it confidence level might include 80%, 90%, 95%, 99% etc. Suppose I use 80% confidence interval, this means that I'm 80% confident that the true polpuation mean will lie within the confidence interval estimated. The remaining 20% will be the error or the number of times that the population mean will not lie within the confidence interval. This is called alpha $`\alpha`$ or level of significance.
+## Level of Significance $`alpha(\alpha)`$
+Level of significance $`\alpha`$ is the probability that the true population mean **will not** lie within the confidence interval. For example, a confidence level of 80% will have a significance level of 20% or 0.2 z-score. It will be divided into 2 because the z-score lies above and below the mean i.e. one for the positive end and the other for the negative end. Therefore:
+
+$`0.2  level of significance = z_{\frac{\alpha}{2}} = z_{\frac{0.2}{2}}`$
+
+The closest value to 0.1 under the negative z-score table is in the -1.2 row under column 0.08 - $`z_{\frac{0.2}{2}}`$ is 1.28 above the mean and -1.28 below the mean.
+
+## Calculating Confidence Interval
+$`CI=\bar{x}\pm z_{\frac{\alpha}{2}}\sigma_{\bar{x}}`$
+
+For an harvest o 
+
+ ## How to Check Z-score Probability on a Normal Distribution Table
+For a z-score of 0.7617, the first two values fall under z column on the table i.e check for 0.7 row under z, now we are left with 0.0617 now, check for 0.06 column on the top-most row on the table; the final value is  0.7 row under column 0.06 (Yes! only the 1st 3 values are used). 
+
 ***To be edited and continued!***
 
 
