@@ -224,7 +224,7 @@ $`P(harvest>0.7764)=0.2236 06 22.36%`$
 
 $`$`P(harvest>0.0968)=0.9032 or 90.32%
 
-Both estimates extend to the tail of the distribution. But I want to be certain of specific range or interval; I will need to use confidence interval.
+
 ## Confidence Interval
 Confidence interval is a range of values for estimating population parameters and it confidence level might include 80%, 90%, 95%, 99% etc. Suppose I use 80% confidence interval, this means that I'm 80% confident that the true polpuation mean will lie within the confidence interval estimated. The remaining 20% will be the error or the number of times that the population mean will not lie within the confidence interval. This is called alpha $`\alpha`$ or level of significance.
 ## Level of Significance $`alpha(\alpha)`$
