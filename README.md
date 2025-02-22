@@ -222,19 +222,24 @@ $`P(harvest>0.7764) = 1 - 0.7764`$ (since the whole normal distribution area is 
 
 $`P(harvest>0.7764)=0.2236 06 22.36%`$
 
-$`$`P(harvest>0.0968)=0.9032 or 90.32%
+$`$`P(harvest>0.0968)= 1- 0.0968=0.9032 or 90.32%
 
+
+In a real world scnenario,the whole population might be too large to work with therefore, it's much easier to work with  sample. Any sampling method used must be a representative of the entire population. A minimum 30 number of samples is needed if z-score is  adopted but if number of sample is less than 30, T-distribution is more desirable. Whichever sampling method is adopted, the law of central limit theorem assured us that the sample is good enough to represent the entire population.
+## The central Limit Theorem
+The central limit theorem states that if the number of samples chosen from a population is large enough, the sample means will follow a normal probability distribution irrespective of the shape of the original population. That's a good news! So, the normal distribution, could be used to make inferences about the data. Since the normal distribution is a continuous distribution, a range or interval for estimates could be established with the Confidence interval.
 
 ## Confidence Interval
-Confidence interval is a range of values for estimating population parameters and it confidence level might include 80%, 90%, 95%, 99% etc. Suppose I use 80% confidence interval, this means that I'm 80% confident that the true polpuation mean will lie within the confidence interval estimated. The remaining 20% will be the error or the number of times that the population mean will not lie within the confidence interval. This is called alpha $`\alpha`$ or level of significance.
+Confidence interval is a range of values for estimating population parameters and it confidence level might include 80%, 90%, 95%, 99% etc. Suppose I use 80% confidence interval, this means that I'm 80% confident that the true polpuation mean will lie within the confidence interval estimated, the remaining 20% will not. The 20% error or the number of times that the population mean will not lie within the confidence interval called alpha $`\alpha`$ or level of significance.
 ## Level of Significance $`alpha(\alpha)`$
 Level of significance $`\alpha`$ is the probability that the true population mean **will not** lie within the confidence interval. For example, a confidence level of 80% will have a significance level of 20% or 0.2 z-score. It will be divided into 2 because the z-score lies above and below the mean i.e. one for the positive end and the other for the negative end. Therefore:
 
 $`0.2  level of significance = z_{\frac{\alpha}{2}} = z_{\frac{0.2}{2}}`$
 
-The closest value to 0.1 under the negative z-score table is in the -1.2 row under column 0.08 - $`z_{\frac{0.2}{2}}`$ is 1.28 above the mean and -1.28 below the mean.
+The closest value to 0.1 under the negative z-score table is in the -1.2 row under column 0.08; $`z_{\frac{0.2}{2}}`$ is 1.28 above the mean and -1.28 below the mean.
 
 ## Calculating Confidence Interval
+
 $`CI=\bar{x}\pm z_{\frac{\alpha}{2}}\sigma_{\bar{x}}`$
 
 For an harvest o 
