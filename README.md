@@ -174,10 +174,11 @@ x= observation
 $`\mu`$ = mean
 
 $`\sigma`$=standard deviation
-***Note*** that population mean $`\mu`$ and population standard deviation $`\sigma`$ are being used because it is assumed that the whole  population is being considered. In a situation where sample from the population is being used (which is mostly the case), standard error replaces standard deviation in the z-score. Therefore, z-score for sampled data will be:
+***Note*** that population mean $`\mu`$ and population standard deviation $`\sigma`$ are being used because it is assumed that the whole  population is being considered. In a situation where sample from the population is being used (which is mostly the case), ***standard error*** replaces standard deviation in the z-score. Therefore, z-score for sampled data will be:
 
-z=$`\frac{x-\bar{x}}{\sigma_{\bar{x}}}`$
+z=$`\frac{x-\bar{x}}{\sigma_{\bar{x}}}`$ where $`\sigma_{\bar{x}}`$ is the standrd error.
 
+### Standard Error
 $`\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}`$
 
 $`\sigma`$ = population standard deviation
@@ -224,25 +225,45 @@ $`P(harvest>0.7764)=0.2236 06 22.36%`$
 
 $`$`P(harvest>0.0968)= 1- 0.0968=0.9032 or 90.32%
 
-
+## Estimating from Samples
 In a real world scnenario,the whole population might be too large to work with therefore, it's much easier to work with  sample. Any sampling method used must be a representative of the entire population. A minimum 30 number of samples is needed if z-score is  adopted but if number of sample is less than 30, T-distribution is more desirable. Whichever sampling method is adopted, the law of central limit theorem assured us that the sample is good enough to represent the entire population.
 ## The central Limit Theorem
 The central limit theorem states that if the number of samples chosen from a population is large enough, the sample means will follow a normal probability distribution irrespective of the shape of the original population. That's a good news! So, the normal distribution, could be used to make inferences about the data. Since the normal distribution is a continuous distribution, a range or interval for estimates could be established with the Confidence interval.
 
-## Confidence Interval
-Confidence interval is a range of values for estimating population parameters and it confidence level might include 80%, 90%, 95%, 99% etc. Suppose I use 80% confidence interval, this means that I'm 80% confident that the true polpuation mean will lie within the confidence interval estimated, the remaining 20% will not. The 20% error or the number of times that the population mean will not lie within the confidence interval called alpha $`\alpha`$ or level of significance.
+## Confidence Interval and Confidence level
+Confidence interval is a range of values for estimating population parameters and it confidence level might include 80%, 90%, 95%, 99% etc of the normal distribution.![Sample Confidence_level_interval]() Suppose I use 80% confidence interval, this means that I'm 80% confident that the true polpuation mean will lie within the confidence interval estimated, the remaining 20% will not. The 20% error or the number of times that the population mean will not lie within the confidence interval is called alpha $`\alpha`$ or level of significance.
 ## Level of Significance $`alpha(\alpha)`$
-Level of significance $`\alpha`$ is the probability that the true population mean **will not** lie within the confidence interval. For example, a confidence level of 80% will have a significance level of 20% or 0.2 z-score. It will be divided into 2 because the z-score lies above and below the mean i.e. one for the positive end and the other for the negative end. Therefore:
+Level of significance $`\alpha`$ is the probability that the true population mean **will not** lie within the confidence interval. For example, a confidence level of 80% will have a significance level of 20% or 0.2 z-score; this will be divided into 2 because the z-score lies above and below the mean i.e. one for the positive end and the other for the negative end. Therefore:
 
 $`0.2  level of significance = z_{\frac{\alpha}{2}} = z_{\frac{0.2}{2}}`$
 
 The closest value to 0.1 under the negative z-score table is in the -1.2 row under column 0.08; $`z_{\frac{0.2}{2}}`$ is 1.28 above the mean and -1.28 below the mean.
 
-## Calculating Confidence Interval
+## How to Calculate Confidence Interval
+Assuming I want to determiine whether I could achieve a 2000 daily sales of boxes of sugar cookies as the new manager of my store. I might have to use the cookie sales data from my store. While it might be challenging to use the whole population of the cookie sales data, relaying on the law of Central limit theorem, I can query the company's database, select at least 30 samples (using z-score), find the mean of the samples, its standard deviation and choose a confidence level. The confidence level is what helps us to determine what the alpha $`(\alpha)`$ will be. 
 
 $`CI=\bar{x}\pm z_{\frac{\alpha}{2}}\sigma_{\bar{x}}`$
 
-For an harvest o 
+So, for a daily cookie sales of 30 number of samples with mean 1864,  standard deviation 18 and a confidence level of 95%, the alpha will be 5%; therefore, the above CI formular can be rewritten as:
+
+$`CI=1864\pm 1.96\sigma_{\bar{x}}`$ 
+
+Don't forget that $`\sigma_{\bar{x}}`$ is the standard error which is standard deviation divided by the square root of number of sample $`\sigma_{\bar{x}}`$= $`\frac{s}{\sqrt{n}}`$ I'm using sample standard deviation
+
+$`\sigma_{\bar{x}} = \frac{18}{\sqrt{30}}`$
+
+$`\sigma_{\bar{x}} = 3.29`$
+
+$`CI = 1864\pm  1.96(3.29)`$ 
+
+$`CI = 1864 - 6.45  or   1864 + 6.45`$
+
+$`CI = 1857.55  or  1870.45`$
+I am now 95% confidence that the daily sales of boxes of sugar cookie is between 1857.55 and 1870.45; I need to work to achieve my daily target of 2000 boxes per day. For now, it's not feasible.
+
+
+
+
 
  ## How to Check Z-score Probability on a Normal Distribution Table
 For a z-score of 0.7617, the first two values fall under z column on the table i.e check for 0.7 row under z, now we are left with 0.0617 now, check for 0.06 column on the top-most row on the table; the final value is  0.7 row under column 0.06 (Yes! only the 1st 3 values are used). 
