@@ -240,7 +240,7 @@ $`0.2  level of significance = z_{\frac{\alpha}{2}} = z_{\frac{0.2}{2}}`$
 The closest value to 0.1 under the negative z-score table is in the -1.2 row under column 0.08; $`z_{\frac{0.2}{2}}`$ is 1.28 above the mean and -1.28 below the mean.
 
 ## How to Calculate Confidence Interval
-Assuming I want to determiine whether I could achieve a 2000 daily sales of boxes of sugar cookies as the new manager of my store. I might have to use the cookie sales data from my store. While it might be challenging to use the whole population of the cookie sales data, relaying on the law of Central limit theorem, I can query the company's database, select at least 30 samples (using z-score), find the mean of the samples, its standard deviation and choose a confidence level. The confidence level is what helps us to determine what the alpha $`(\alpha)`$ will be. 
+Assuming I want to determiine whether I could achieve a 2000 daily sales of boxes of sugar cookies as the new manager of my store. I might have to use the cookie sales data from my store. While it might be challenging to use the whole population of the cookie sales data, relaying on the law of Central Limit Theorem, I can query the company's database, select at least 30 samples (using z-score), find the mean of the samples, its standard deviation and choose a confidence level. The confidence level is what helps us to determine what the alpha $`(\alpha)`$ will be. 
 
 $`CI=\bar{x}\pm z_{\frac{\alpha}{2}}\sigma_{\bar{x}}`$
 
@@ -256,10 +256,28 @@ $`\sigma_{\bar{x}} = 3.29`$
 
 $`CI = 1864\pm  1.96(3.29)`$ 
 
-$`CI = 1864 - 6.45  or   1864 + 6.45`$
+$`CI is within = 1864 - 6.45   and  1864 + 6.45`$
 
-$`CI = 1857.55  or  1870.45`$
-I am now 95% confidence that the daily sales of boxes of sugar cookie is between 1857.55 and 1870.45; I need to work to achieve my daily target of 2000 boxes per day. For now, it's not feasible.
+$`CI is within = 1857.55  and  1870.45`$
+I am now 95% confidence that the daily sales of boxes of sugar cookie is within intervals 1857.55 and 1870.45; I need to work harder and do things a bit differently to achieve my daily target of 2000 boxes per day. For now, it's not feasible.
+Assuming the executives of my company said, look, the average boxes of cookie sold per day in the industry as a whole is 2800, we know of a competitive company nearby that is already making average sales of 1900 boxes per day and that there is no significant difference between 1900 and 2000 boxes of cookie boxes and that I shoul therefore think of a better number. If I want to proof to them that there is actually a significant differnt between 1900 and 2000 and that we should target 2000 for now, I will have to conduct hypothesis testing.
+
+## Hypothesis Testing
+Hypothesis testing is conducted to varify the validity of a claim about a population based on a single sample [cite]. To varify my executives claim that there is no significant difference between 1900 and 2000 sales of cookie boxes; I found out that the standard deviation of the company in question is 80 (meaning their sales is ranging between 1820 and 1980), and the standard deviation of my projected sales of 2000 is 20 choose a 95% confidence interval with an alpha of 5%. I then conducted my test as follows:
+
+**State my claims**
+
+**Null Hypothesis $`H_{0}`$**: There is no significant difference between 1900 and 2000 boxes of cookies.
+
+**Alternate Hypothesis $`H_{1}`$**: There is a significant differnce between 1900 and 2000 boxes of cookies.
+**Find the scores for both means**:
+
+
+
+
+
+
+
 
 
 
