@@ -1,5 +1,5 @@
 ## Data Analysts and Statistics
-Data Analysts and Scientists adopt some  statistics in their applications to solve problems. I looked at some of the basic ones that are commonly used for data analysis. But before then, let's,  talk about table first
+Data Analysts and Scientists adopt some  statistics in their applications to solve problems. I looked at some of the basic ones that are commonly used for data analysis. But before then, let's,  talk about table.
 
 ## Table
 I didn't mean the type your PC is sitting on right now; neither I'm I talking about the type where you set and enjoy your meal! Just kidding. Statistical tables are structured ways of presenting data in rows and columns.
@@ -7,10 +7,10 @@ I didn't mean the type your PC is sitting on right now; neither I'm I talking ab
 **A Table with Rows and Columns**
 
 
-![A Sample Table in Rows and Columns]()
+![A Sample Table with Rows and Columns]()
 
 
-How the data is organized in the table can give the table a slightly unique name such as: distribution frequency table, contingency table, cummulative frequncy distribution table etc. 
+How the data is organized in the table can give the table a slightly unique name such as: distribution table, distribution frequency table, contingency table, cummulative frequncy distribution table etc. 
 ### Frequncy Distribution Table
 This displays the observed data and the total time it occured. Imagine that you want to know how mny blue cars pass on your street daily, so, you decided to take daily data of blue cars that pass on your street for one week. Below is a simple frequency table summarising a likely outcome.
 
