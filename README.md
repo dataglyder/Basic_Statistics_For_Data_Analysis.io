@@ -260,17 +260,17 @@ $`CI is within = 1864 - 6.45   and  1864 + 6.45`$
 
 $`CI is within = 1857.55  and  1870.45`$
 I am now 95% confidence that the daily sales of boxes of sugar cookie is within intervals 1857.55 and 1870.45; I need to work harder and do things a bit differently to achieve my daily target of 2000 boxes per day. For now, it's not feasible.
-Assuming the executives of my company said, look, the average boxes of cookie sold per day in the industry as a whole is 2800, we know of a competitive company nearby that is already making average sales of 1900 boxes per day and that there is no significant difference between 1900 and 2000 boxes of cookie boxes and that I shoul therefore think of a better number. If I want to proof to them that there is actually a significant differnt between 1900 and 2000 and that we should target 2000 for now, I will have to conduct hypothesis testing.
+Assuming the higher management of my company said, look, You might have drawn from the most recent data; We use to sell an average of 1900 boxes of cookies per day. To cornfirm if there is a significant difference between 1864 and 1900, I will have to conduct hypothesis testing.
 
 ## Hypothesis Testing
-Hypothesis testing is conducted to varify the validity of a claim about a population based on a single sample [cite]. To varify my executives claim that there is no significant difference between 1900 and 2000 sales of cookie boxes; I found out that the standard deviation of the company in question is 80 (meaning their sales is ranging between 1820 and 1980), and the standard deviation of my projected sales of 2000 is 20 choose a 95% confidence interval with an alpha of 5%. I then conducted my test as follows:
+Hypothesis testing is conducted to varify the validity of a claim about a population based on a single sample [cite]. To varify whether there is a significant difference between 1864 and 1900  sales of cookie boxes with a standard deviation of 89 I choose a 95% confidence interval i.e., alpha is 5% and  conducted my test as follows:
 
-**State my claims**
+**State my hypothesis**
 
-**Null Hypothesis $`H_{0}`$**: There is no significant difference between 1900 and 2000 boxes of cookies.
+**Null Hypothesis $`H_{0}`$**: There is no significant difference between 1864 and 1900 boxes of cookies .
 
 **Alternate Hypothesis $`H_{1}`$**: There is a significant differnce between 1900 and 2000 boxes of cookies.
-**Find the scores for both means**:
+**Find the z-score for both means**:
 
 
 
