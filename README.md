@@ -256,21 +256,44 @@ $`\sigma_{\bar{x}} = 3.29`$
 
 $`CI = 1864\pm  1.96(3.29)`$ 
 
-$`CI is within = 1864 - 6.45   and  1864 + 6.45`$
+CI is within = 1864 - 6.45   and  1864 + 6.45
 
-$`CI is within = 1857.55  and  1870.45`$
+CI is within = 1857.55  and  1870.45
+
 I am now 95% confidence that the daily sales of boxes of sugar cookie is within intervals 1857.55 and 1870.45; I need to work harder and do things a bit differently to achieve my daily target of 2000 boxes per day. For now, it's not feasible.
-Assuming the higher management of my company said, look, You might have drawn from the most recent data; We use to sell an average of 1900 boxes of cookies per day. To cornfirm if there is a significant difference between 1864 and 1900, I will have to conduct hypothesis testing.
+Assuming the higher management of my company said, look, you might have drawn from the most recent data; we use to sell an average of 1900 boxes of cookies per day. To cornfirm that the true mean of the population is 1900, I will have to conduct hypothesis testing.
 
 ## Hypothesis Testing
-Hypothesis testing is conducted to varify the validity of a claim about a population based on a single sample [cite]. To varify whether there is a significant difference between 1864 and 1900  sales of cookie boxes with a standard deviation of 89 I choose a 95% confidence interval i.e., alpha is 5% and  conducted my test as follows:
+Hypothesis testing is conducted to varify the validity of a claim about a population based on a single sample [cite]. To varify whether there is a significant difference between 1864 and 1900  sales of cookie boxes, I choose a 95% confidence interval i.e., alpha is 5% and  conducted my test as follows:
 
 **State my hypothesis**
 
-**Null Hypothesis $`H_{0}`$**: There is no significant difference between 1864 and 1900 boxes of cookies .
+**Null Hypothesis $`H_{0}`$**: $`\mu = 1900`$
 
-**Alternate Hypothesis $`H_{1}`$**: There is a significant differnce between 1900 and 2000 boxes of cookies.
+**Alternate Hypothesis $`H_{1}`$**:  $`\mu\neq 1900`$
+
 **Find the z-score for both means**:
+
+$`z=\frac{\bar{x}-\mu}{\sigma_{\bar{x}}}`$ Remember that $`\sigma_{\bar{x}} = \frac{s}{\sqrt n}`$
+$`\sigma_{\bar{x}} = \frac{18}{\sqrt 30}
+$`\sigma_{\bar{x}}=3.286
+
+Therefore, $`z=\frac{1864-1900}{3.286}`$ = -10.956 as shown in the distribution below.
+![Distribution]()
+
+Since the calculated z-score value falls outside the no-rejection area, I have to reject the null hypothesis $`H_{0}`$. Possibly, the data my colleague is talking about is an outdated data that does not reflect the current shopping attitude or taste of our customers. I have to go with what the customers want for now.
+
+Let's assume that I've worked realy hard to meet my target sales of 2000 boxes per day, but there is a competitive company that is selling an average of 2100 boxes per day and I'm curious to know if there is any significant difference between their sales and ours? To varify this, I conducted another hypothesis test.
+
+
+
+**Null Hypothesis $`H_{0}`$**: There is no significant difference between 1864 and 1900 boxes of cookies i., $`\mu `$
+
+**Alternate Hypothesis $`H_{1}`$**: There is a significant differnce between 1864 and 1900 boxes of cookies i.e., $`\mu`$
+
+
+
+
 
 
 
