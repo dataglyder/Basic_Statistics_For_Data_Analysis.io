@@ -37,7 +37,7 @@ It's the average; calculated by adding all the observations and dividing by the 
 
 **Population Mean**
 
-Population mean is the average of all observations being considered in an analysis.Assuming you want to know the total number of blue cars that are within your county instead of just your street; all blue cars within your county represent total population of blue cars. Let's say there are only 6 streets in your county, all blue cars within each streets are counted and the average or mean of these data could be computed as shown below. This type of mean is called **population mean miu/mu/meu** ($`\mu`$).
+Population mean is the average of all observations being considered in an analysis.Assuming you want to know the average number of blue cars that are within your county; all blue cars within your county represent total population of blue cars. Let's say there are only 6 streets in your county, all blue cars within each streets are counted and the average or mean of these data could be computed as shown below. This type of mean is called **population mean miu/mu/meu** ($`\mu`$) because every blue cars in your county is being counted.
 
 ![Total blue cars within the County](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/pop_mean.png)
 
@@ -60,7 +60,7 @@ $$x_i$$ = from first observation to the last
 
 **Sample Mean**
 
-Sample mean is a subset of the population that represent the entire population. Taking the mean of the blue cars in your street as shown in [frequency distribution table]() above is an example of sample mean i.e., Taking a daily sample of blue cars and then the average to represent the entire blue cars that pass on your street daily. The sample mean \bar{x} can be represented mathematically as:
+Sample mean is a subset of the population that represent the entire population. Taking the mean of the blue cars in your street as shown in [Cummulative Frequency Distribution](#cummulative-frequency-distribution) above is an example of sample mean i.e., Taking a daily sample of blue cars and then the average to represent the entire blue cars that pass on your street daily. The sample mean \bar{x} can be represented mathematically as:
 
 $`\bar{x} = \frac{\sum_{i=1}^n x_i}{n}`$
 
@@ -87,7 +87,7 @@ $$\bar{x} = 34$$
 **2.** Population mean is represented by meu ($`\mu`$) and it's total count is represented by upper case "N" while sample mean is represented by ($`\bar{x}`$) and its total count is represented by lower case "n".
 
 ## Outliers
-The down side of using mean is that it can easily be influenced by outliers. outliers are extreme high or low values that are doubted not to be part of the original data due to their extremity. Consider the scenario under the [frequency distribution table](); if there are days where small number of cars are observed due to for example, weather condition; and people choose to take the bus rather than drive or they choose to work from home, or days where high number of cars are observed due to a party down the street, the average will be low and high in both situations respectively. The two extremes are regarded as outliers. Therefore, a frequency of 2 (due to weather inclement) and 260 (due to a party) are extremes.
+The down side of using mean is that it can easily be influenced by outliers. outliers are extreme high or low values that are doubted not to be part of the original data due to their extremity. Consider the scenario under the [Cummulative Frequency Distribution](#cummulative-frequency-distribution); if there are days where small number of cars are observed due to for example, weather condition; and people choose to take the bus rather than drive or they choose to work from home, or days where high number of cars are observed due to a party down the street, the average will be low and high in both situations respectively. The two extremes are regarded as outliers. Therefore, a frequency of 2 (due to weather inclement) and 260 (due to a party) are extremes.
 
 ## Median
 The median is the value that falls at the middle of a distribution after arranging the distribution in an ascending order. These set of values
