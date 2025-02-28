@@ -14,12 +14,13 @@ How the data is organized in the table can give the table a slightly unique name
 ### Frequency Distribution Table
 This displays the observed data and the total time it occured. Imagine that you want to know how many blue cars pass on your street daily, so, you decided to take daily data of blue cars that pass on your street for one week. Below is a simple frequency table summarising a likely outcome.
 
-![Frequency Distribution Table]()
+![Frequency Distribution Table](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/freq_table.png)
 
 ### Cummulative Frequency Distribution
 Frequency distribution table becomes cummulative distribution table by adding the frequencies in a subsequent order as shown below.
 
 ![Cummulative Frequency Table](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/cum_freq.png)
+
 ### Contingency Table
 Contigency tables are used to represent variables that are more than one. Consider a dealer who gathers data about his car sales by color so as to determine what quantity to keep in stock by color. The contingency table below might represent data collected. 
 
@@ -32,7 +33,7 @@ Descriptive statistics involves the use of ***measures of central tendency*** an
 ## Measures of Central Tendency
 Measures of central tendency are the mean, meadian and mode - they return a single value as the center point of the data (Bob and Fatma 2016, p.50)[1]. They are very easy to calculate with data analytic tools, like spreadsheets(Google sheet and Microsoft Excel Sheet), python and R especially with large data. But in this write up, I'm going to do them the traditional way.
 ### Mean
-It's the average; calculated by adding all the observations and dividing by the total number of observations. So, from the [table above](#Cummulative Frequency Distribution), $`\ mean = 236/7`$ which is  $`\simeq 34`$.
+It's the average; calculated by adding all the observations and dividing by the total number of observations. So, from the [Cummulative Frequency Distribution](#cummulative-frequency-distribution) table above, $`\ mean = 236/7`$ which is  $`\simeq 34`$.
 
 **Population Mean**
 
