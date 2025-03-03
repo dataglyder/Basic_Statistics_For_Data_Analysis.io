@@ -32,7 +32,7 @@ Contigency tables are used to represent variables that are more than one. Consid
 Descriptive statistics involves the use of ***measures of central tendency*** and ***measures of dispersion*** to gain knowledge and also probably make decisions about data.
 ## Measures of Central Tendency
 Measures of central tendency are the mean, meadian and mode - they return a single value as the center point of the data (Bob and Fatma 2016, p.50)[1]. They are very easy to calculate with data analytic tools, like spreadsheets(Google sheet and Microsoft Excel Sheet), python and R especially with large data. But in this write up, I'm going to do them the traditional way.
-### Mean
+## Mean
 It's the average; calculated by adding all the observations and dividing by the total number of observations. So, from the [Cummulative Frequency Distribution](#cummulative-frequency-distribution) table above, $`\ mean = 236/7`$ which is  $`\simeq 34`$.
 
 **Population Mean**
@@ -41,7 +41,7 @@ Population mean is the average of all observations being considered in an analys
 
 ![Total blue cars within the County](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/pop_mean.png)
 
-$`\mu = 216/6 \simeq 36`$ This could be statistically represented as:
+$`\mu = 216/6 \simeq 36`$ This could be written in statistical symbol as:
 
 $`\mu = \frac{\sum_{i=1}^N x_i}{N}`$
 
@@ -60,7 +60,7 @@ $$x_i$$ = from first observation to the last
 
 **Sample Mean**
 
-Sample mean is a subset of the population that represent the entire population. Taking the mean of the blue cars in your street as shown in [Cummulative Frequency Distribution](#cummulative-frequency-distribution) above is an example of sample mean i.e., Taking a daily sample of blue cars and then the average to represent the entire blue cars that pass on your street daily. The sample mean \bar{x} can be represented mathematically as:
+Sample mean is a subset of the population that represent the entire population. Taking the mean of the blue cars in your street as shown in [Cummulative Frequency Distribution](#cummulative-frequency-distribution) above is an example of sample mean i.e., Taking a daily sample of blue cars and then the average to represent the entire blue cars that pass on your street daily. The sample mean \bar{x} can be represented symbolically as:
 
 $`\bar{x} = \frac{\sum_{i=1}^n x_i}{n}`$
 
@@ -99,15 +99,15 @@ The mode is the value that appears most in an array of observations. In $`4, 4, 
 
 ## Measures of Despersion
 Measures of dispersion indicate the spread of data around the mean. Variance, Standard Deviation and Range are examples of measures of despersion.
-### Variance
-The variance is the square of the desperse of the data devided by frequency count if dealing with a population or devided by frequency count minus one while dealing with a sample. It could be expressed mathematically as shown below.
+## Variance
+The variance is the square of the desperse of the data devided by frequency count if dealing with a population or devided by frequency count minus one while dealing with a sample. It could be expressed symbolically as shown below.
 
 **Population Variance**
 $`\sigma^2=\frac{\sum_{i=1}^N( x_i-\mu)^2}{N}`$
 
 Let's say I want to know the variance of the weight of harvested tomatoes from my garden (population) for seven days , as in the table below.
 
-![tomato_weight]()
+![tomato_weight](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/Tomato_table.png)
 
 $`\sigma^2 = \frac{310.96}{7}`$
 
@@ -118,7 +118,7 @@ $`s^2=\frac{\sum_{i=1}^n( x_i-\bar{x})^2}{n-1}`$
 
 As the manager of my department, assuming I want to know the variance in sales of sugar cookie (sample) for  one week as in the table below.
 
-![cookie_table]()
+![cookie_table](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/cookie_sale.png)
 
 $`s^2=\frac{2192.86}{6}`$
 
@@ -127,32 +127,37 @@ $`s^2\simeq366`$
 ***Note*** In simple term, each tomato weight is approximately 44 square unit away from the mean while each sugar cookie sale is approximately 366 square unit away from the mean. In other to understand better how far these observations are away from the mean, we take the square root of variance; this, is equivalent to standard deviation.
 
 ## Standard Deviation
-The standard deviation is the square root of variance.
-$`\sigma=\sqrt\sigma^2=\sqrt\frac{\sum_{i=1}^N( x_i-\mu)^2}{N}`$ for population standard deviation and $`s=\sqrt s^2=\sqrt\frac{\sum_{i=1}^n( x_i-\bar{x})^2}{n-1}`$ for sample standard deviation
+The standard deviation is the square root of variance; $`\sigma=\sqrt{\sigma^2}`$.
+
+**Population Standard Deviation sigma** Could be represented as
+$`\sigma =\sqrt{\frac{\sum_{i=1}^N( x_i-\mu)^2}{N}}`$ 
 
 Population standard deviation of tomato weight is:
 
-$`\sigma=\sqrt44`$
+$`\sigma=\sqrt{44}`$
 
 $`\sigma= 6.6`$
 
+**Sample Standard Deviation s or s.d** Could be represented as: 
+$`s=\sqrt {s^2}=\sqrt\frac{\sum_{i=1}^n( x_i-\bar{x})^2}{n-1}`$
+
 Sample Standard deviation of cookie sales is:
 
-$`s=\sqrt366`$
+$`s=\sqrt{366}`$
 
 $`s=19.1`$
 
-## Application of Standard Deviation
-Consider our ![cookie sale table](), imagine that we have a sale of $`$400`$, that would be about 5 standard deviation (4.6) to the right from the mean. While a sale of $`$250`$ would be approximately 3 standard deviation (3.3) from the mean.
-##[Sd and cookie sale]()
-Now, suppose there is a very good day in summer with a lot of parties, and out doors activities and there is a sale of $2000 dollars,  or 3 days inclement weather that resulted into drop in sale i.e., #50 per day. Of course, these might be regarded as outliers; but suppose the bumper sale continue throughout the summer while the low sale period extend to all winter. The measures of central tendency and dispersion might not be ideal enought to give us the best insight into the down, peak and low period within the data; this is where inferencial statistics and the standard normal probability distribution come into play.
+## Example Application of Standard Deviation
+Consider the sample mean of 312.86 under [variance](#variance) above, imagine that we have a sale of $`$350`$, that would be about 2 standard deviation to the right from the mean. While a sale of $`$260`$ would be more than 2 standard deviation to the left from the mean.
 
-### Range
-Range is the difference between the highest and the lowest observation in an array of data. The range of $`1, 5, 6, 7, 8, 9, 25`$ is 24. i.e., $`25-1`$
+![sample_Sd and cookie sale]()
+
+## Inferencial Statistics
+Still on the [sample variance](#variance) cookie sale, suppose there is a very good day in summer with a lot of parties, and out doors activities that resulted into a sale of $2000 dollars,  or  a 3 days inclement weather that resulted into drop in sale i.e., #50 per day. Of course, these might be regarded as outliers; but suppose the bumper sale continue throughout the summer while the low sale period extend to all winter. The measures of central tendency and dispersion might not be ideal enough to give us the best insight into the down, peak and low periods within the data; this is where inferencial statistics and the standard normal probability distribution come into play. Inferencial statistics entails making judgement about the whole data population by using just a small portion of the data. 
 
 ## The Normal Probability Distribution
-Normal probability distribution is a curve that follows a bell shape. Let's assume our [tomates harvesting] is from hectares of  land and was at the beginnig of the harvesting period  and gradually climb until it reaches the peak of the season and then start declining until the end of the season. The kind of shape gotten from this illustration is the normal distribution curve but with some unique attributes to the statistical normal distribution itself.
-
+Normal probability distribution is a curve that follows a bell shape. Let's say I've upgraded and I now cultivate hectares of tomatoes farm, in my harvesting season; the harvest is low at the beginnig and gradually increase until it reaches the peak of the season and then start declining until the end of the season. The kind of shape gotten from this illustration is the normal distribution curve but with some unique attributes to the statistical normal distribution itself.
+**Attributes of Normal Distribution
 **(1)** The total area under the normal distribution is 1
 
 **(2)** The mean is zero and it has standard deviation is 1.
@@ -162,10 +167,10 @@ Normal probability distribution is a curve that follows a bell shape. Let's assu
 **(4)** Both ends of the curve extend to infinity
 
 **(5)** Starting from 0 (mean) to the right extend to positive infinity while from 0 (mean) to the left extend to negative infinity; the positivity and negativity only indicates that the standdard deviation lies above or below the mean respectively.
-![Probability Density Curve]()
+![Probability Density Curve](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/norm11.png)
 
 ## Standardizing Data with the Z-score
-In other to use standard normal distribution to make inference about our data, the data must first be standardized with a z-score. using the formular:
+To use standard normal distribution to make inference about data, the data must be normally distributed i.e. follow the kind of curve described above, then it could be standardized with a z-score. using the formular:
 
 z=$`\frac{x-\mu}{\sigma}`$ Where:
 
@@ -176,11 +181,13 @@ x= observation
 $`\mu`$ = mean
 
 $`\sigma`$=standard deviation
+
 ***Note*** that population mean $`\mu`$ and population standard deviation $`\sigma`$ are being used because it is assumed that the whole  population is being considered. In a situation where sample from the population is being used (which is mostly the case), ***standard error*** replaces standard deviation in the z-score. Therefore, z-score for sampled data will be:
 
 z=$`\frac{x-\bar{x}}{\sigma_{\bar{x}}}`$ where $`\sigma_{\bar{x}}`$ is the standrd error.
 
-### Standard Error
+## Standard Error
+Standard error $`\sigma_{\bar{x}} tells us how disperse the sample mean is from the population mean. It replaces standard deviation  while calculating the z-score of a sampled data
 $`\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}`$
 
 $`\sigma`$ = population standard deviation
@@ -188,17 +195,8 @@ $`\sigma`$ = population standard deviation
 n = number of sample
 
 
-Let's say my tomatoes harvesting truelly follow a normal distribution and several pounds were harvested daily as shown in the table below; resulting in the normal distribution that follows.
-
-![tom_table]()
-
-$`\mu = 1372.72`$
-
-$`\sigma= 823.52`$
-
-![Distribution curve]()
-
-Standard normal distribution has a mean of 0,therefore, the data has to be standardize with the z-score for estimation.
+Let's assume that my tomatoes harvesting truelly follow a normal distribution with a
+$`\mu = 1372.72`$ pounds and $`\sigma= 823.52`$ I can make a number of judgement about the data for example, the probability of getting a certain amount of harvest. But first, the data has to be standardize with the z-score for estimation.
 To check the probability of harvesting 2000lb of tomatoes in a day, we can do:
 $`z=\frac{x-\mu}{\sigma}`$ 
 
@@ -207,28 +205,29 @@ $`z= $`\frac{2000-1372.72}{823.52}`$
 $`z=0.7617`$ Meaning 2000lb harvest is only 0.7617 standard deviation away from mean.
 Now, ![check z-score pro]() ![the normal distribution table](https://z-table.com/) could be used to find the probability of harvesting 2000lb of tomatoes. 
 
+## How to Check Z-score Probability on a Normal Distribution Table
+For a z-score of 0.7617, the first two values fall under z column on the table i.e check for 0.7 row under z, now we are left with 0.0617 now, check for 0.06 column on the top-most row on the table; e.g., 0.7 row under column 0.06 (Yes! only the 1st 3 values are used). 
 
-z-score 0.7617 has a probability of 0.7764 i.e. 77.64% chance of harvesting 2000lb of tomatoes per day.
-
-
-The probability of harvesting 300lb will be
-$`z= \frac{300-1372.72}{823.52}`$
-$`z = -1.3026`$ This means getting a harvest of 300lb is 1.3 standard deviation below the mean. 
-
-Using the normal distribution table, the probability of harvesting 300lb of tomateos is 0.0968 i.e. 9.68%
-
-These values estimated are range of values that extends to the tail of the distribution meaning that harvest could be 2000lb or less, 300lb pounds or less. 
-
-To see if harvest could be greater than 2000lb or 300lb:
+z-score 0.7617 has a probability of 0.7764 i.e. 77.64% chance of harvesting 2000lb or less of tomatoes per day.
+To see if harvest could be greater than 2000lb:
 
 $`P(harvest>0.7764) = 1 - 0.7764`$ (since the whole normal distribution area is 1)
+$`P(harvest>0.7764) = 0.2236 06 22.36%`$
 
-$`P(harvest>0.7764)=0.2236 06 22.36%`$
+The probability of harvesting 300lb or less  will be
+$`z= \frac{300-1372.72}{823.52}`$
+$`z = -1.3026`$ This means that getting a harvest of 300lb is 1.3 standard deviation below the mean. 
 
-$`$`P(harvest>0.0968)= 1- 0.0968=0.9032 or 90.32%
+Using the normal distribution table, the probability of harvesting 300lb of tomateos with a z-score of -1.3026 is 0.0968 i.e. 9.68%
+
+To see if harvest could be greater than  300lb:
+
+$`P(harvest>0.0968)= 1- 0.0968=0.9032 or 90.32%
+
+***These estimated values are range of values that extends to the tail of the distribution meaning that harvest could be 2000lb or less, 300lb pounds or less.*** 
 
 ## Estimating from Samples
-In a real world scnenario,the whole population might be too large to work with therefore, it's much easier to work with  sample. Any sampling method used must be a representative of the entire population. A minimum 30 number of samples is needed if z-score is  adopted but if number of sample is less than 30, T-distribution is more desirable. Whichever sampling method is adopted, the law of central limit theorem assured us that the sample is good enough to represent the entire population.
+In a real world scnenario,the whole population might be too large to work with therefore, it's much easier to work with  sample. Any sampling method used must be a representative of the entire population. A minimum of 30 number of samples is needed when z-score is being used for standardization. As long as the sampling method is not biased,  the law of central limit theorem assured us that the sample will be good enough to represent the entire population.
 ## The central Limit Theorem
 The central limit theorem states that if the number of samples chosen from a population is large enough, the sample means will follow a normal probability distribution irrespective of the shape of the original population. That's a good news! So, the normal distribution, could be used to make inferences about the data. Since the normal distribution is a continuous distribution, a range or interval for estimates could be established with the Confidence interval.
 
@@ -308,8 +307,6 @@ Let's assume that I've worked realy hard to meet my target sales of 2000 boxes p
 
 
 
- ## How to Check Z-score Probability on a Normal Distribution Table
-For a z-score of 0.7617, the first two values fall under z column on the table i.e check for 0.7 row under z, now we are left with 0.0617 now, check for 0.06 column on the top-most row on the table; the final value is  0.7 row under column 0.06 (Yes! only the 1st 3 values are used). 
 
 
 ---
