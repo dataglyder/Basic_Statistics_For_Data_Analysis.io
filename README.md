@@ -148,25 +148,23 @@ $`s=\sqrt{366}`$
 $`s=19.1`$
 
 ## Example Application of Standard Deviation
-Consider the sample mean of 312.86 under [variance](#variance) above, imagine that we have a sale of $`$350`$, that would be about 2 standard deviation to the right from the mean. While a sale of $`$260`$ would be more than 2 standard deviation to the left from the mean.
+Consider the sample mean of 312.86 under sample [variance](#variance) table above, imagine that we have a sale of $`$350`$, that would be about 2 standard deviation to the right from the mean. While a sale of $`$260`$ would be more than 2 standard deviation to the left from the mean.
 
-![sample_Sd and cookie sale]()
+![sample_Sd and cookie sale](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/applic_sd.png)
 
 ## Inferencial Statistics
-Still on the [sample variance](#variance) cookie sale, suppose there is a very good day in summer with a lot of parties, and out doors activities that resulted into a sale of $2000 dollars,  or  a 3 days inclement weather that resulted into drop in sale i.e., #50 per day. Of course, these might be regarded as outliers; but suppose the bumper sale continue throughout the summer while the low sale period extend to all winter. The measures of central tendency and dispersion might not be ideal enough to give us the best insight into the down, peak and low periods within the data; this is where inferencial statistics and the standard normal probability distribution come into play. Inferencial statistics entails making judgement about the whole data population by using just a small portion of the data. 
+Still on the [sample variance](#variance) cookie sale, suppose there is a very good day in summer with a lot of parties, and out doors activities that resulted into a sale of $2000 dollars,  or  a 3 days inclement weather that resulted into drop in sale i.e., #50 per day. Of course, these might be regarded as outliers; but should the bumper sale continue throughout the summer and the low sale period extend to all winter. The measures of central tendency and dispersion might not be ideal enough to give us the best insight into the down, peak and low periods within the data; this is where inferencial statistics and the standard normal probability distribution come into play. Inferencial statistics entails making judgement about the whole data population by using just a small portion of the data. 
 
 ## The Normal Probability Distribution
 Normal probability distribution is a curve that follows a bell shape. Let's say I've upgraded and I now cultivate hectares of tomatoes farm, in my harvesting season; the harvest is low at the beginnig and gradually increase until it reaches the peak of the season and then start declining until the end of the season. The kind of shape gotten from this illustration is the normal distribution curve but with some unique attributes to the statistical normal distribution itself.
-**Attributes of Normal Distribution
+
 **(1)** The total area under the normal distribution is 1
 
-**(2)** The mean is zero and it has standard deviation is 1.
+**(2)** The mean is zero and it has standard deviation of 1.
 
 **(3)** The mean and the standard deviation are on the x- axis while the y-axis represents the probability density of the data being analysed.
 
-**(4)** Both ends of the curve extend to infinity
-
-**(5)** Starting from 0 (mean) to the right extend to positive infinity while from 0 (mean) to the left extend to negative infinity; the positivity and negativity only indicates that the standdard deviation lies above or below the mean respectively.
+**(4)** Both ends of the curve extend to infinity; starting from 0 (mean) to the right extend to positive infinity while from 0 (mean) to the left extend to negative infinity. The positivity and negativity  indicate that the standdard deviation lies above or below the mean respectively.
 ![Probability Density Curve](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/norm11.png)
 
 ## Standardizing Data with the Z-score
@@ -187,7 +185,7 @@ $`\sigma`$=standard deviation
 z=$`\frac{x-\bar{x}}{\sigma_{\bar{x}}}`$ where $`\sigma_{\bar{x}}`$ is the standrd error.
 
 ## Standard Error
-Standard error $`\sigma_{\bar{x}} tells us how disperse the sample mean is from the population mean. It replaces standard deviation  while calculating the z-score of a sampled data
+Standard error $`\sigma_{\bar{x}}`$ tells us how disperse the sample mean is from the population mean. It replaces standard deviation  while calculating the z-score of a sampled data.
 $`\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}`$
 
 $`\sigma`$ = population standard deviation
@@ -196,29 +194,29 @@ n = number of sample
 
 
 Let's assume that my tomatoes harvesting truelly follow a normal distribution with a
-$`\mu = 1372.72`$ pounds and $`\sigma= 823.52`$ I can make a number of judgement about the data for example, the probability of getting a certain amount of harvest. But first, the data has to be standardize with the z-score for estimation.
-To check the probability of harvesting 2000lb of tomatoes in a day, we can do:
+$`\mu = 1372.72`$ pounds of tomatoes and $`\sigma= 823.52`$ I can make a number of judgement about the data for example, the probability of getting a certain amount of harvest. But first, the data has to be standardize with the z-score for estimation.
+To check the probability of harvesting 2000lb of tomatoes in a day, I can do:
 $`z=\frac{x-\mu}{\sigma}`$ 
 
-$`z= $`\frac{2000-1372.72}{823.52}`$
+$`z= \frac{2000-1372.72}{823.52}`$
 
-$`z=0.7617`$ Meaning 2000lb harvest is only 0.7617 standard deviation away from mean.
-Now, ![check z-score pro]() ![the normal distribution table](https://z-table.com/) could be used to find the probability of harvesting 2000lb of tomatoes. 
+$`z=0.7617`$ Meaning 2000lb harvest is only 0.7617 standard deviation away from mean. The probability of this z-score (0.7617) is then checked on the normal distribution table. 
 
 ## How to Check Z-score Probability on a Normal Distribution Table
-For a z-score of 0.7617, the first two values fall under z column on the table i.e check for 0.7 row under z, now we are left with 0.0617 now, check for 0.06 column on the top-most row on the table; e.g., 0.7 row under column 0.06 (Yes! only the 1st 3 values are used). 
+For a z-score of 0.7617, the first two values fall under z column on the table i.e check for 0.7 row under z, now we are left with 0.0617, check for 0.06 on the top-most row on the table and correspond it to the 0.7 row; e.g., 0.7 row under column 0.06 (Yes! only the 1st 3 values are used) resulting into 0.7617. See [the normal distribution table](https://z-table.com/) for samples.
 
-z-score 0.7617 has a probability of 0.7764 i.e. 77.64% chance of harvesting 2000lb or less of tomatoes per day.
-To see if harvest could be greater than 2000lb:
+Therefore, my harvest with z-score 0.7617 has the probability of 0.7764 i.e. 77.64% chance of harvesting 2000lb of tomatoes.
+
+To check if harvest could be greater than 2000lb:
 
 $`P(harvest>0.7764) = 1 - 0.7764`$ (since the whole normal distribution area is 1)
-$`P(harvest>0.7764) = 0.2236 06 22.36%`$
+$`P(harvest>0.7764) = 0.2236 or 22.36%`$
 
 The probability of harvesting 300lb or less  will be
 $`z= \frac{300-1372.72}{823.52}`$
-$`z = -1.3026`$ This means that getting a harvest of 300lb is 1.3 standard deviation below the mean. 
+$`z = -1.3026`$ This means that getting a harvest of 300lb is 1.3 standard deviation below the mean i.e., to the left. 
 
-Using the normal distribution table, the probability of harvesting 300lb of tomateos with a z-score of -1.3026 is 0.0968 i.e. 9.68%
+Using the normal distribution table, the probability of harvesting 300lb of tomateos with a z-score of -1.3026 is 0.0968 i.e. 9.68% (***Check under the negative z-score table for a negative z-score.***)
 
 To see if harvest could be greater than  300lb:
 
@@ -232,13 +230,14 @@ In a real world scnenario,the whole population might be too large to work with t
 The central limit theorem states that if the number of samples chosen from a population is large enough, the sample means will follow a normal probability distribution irrespective of the shape of the original population. That's a good news! So, the normal distribution, could be used to make inferences about the data. Since the normal distribution is a continuous distribution, a range or interval for estimates could be established with the Confidence interval.
 
 ## Confidence Interval and Confidence level
-Confidence interval is a range of values for estimating population parameters and it confidence level might include 80%, 90%, 95%, 99% etc of the normal distribution.![Sample Confidence_level_interval]() Suppose I use 80% confidence interval, this means that I'm 80% confident that the true polpuation mean will lie within the confidence interval estimated, the remaining 20% will not. The 20% error or the number of times that the population mean will not lie within the confidence interval is called alpha $`\alpha`$ or level of significance.
+Confidence interval is a range of values for estimating population parameters and it confidence level might include 80%, 90%, 95%, 99% etc of the normal distribution.The table below shows some examples of confidence intervals and confidence levels.
+![Sample Confidence_level_interval](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/con_level_inervl.png) Suppose I use 80% confidence interval, this means that I'm 80% confident that the true polpuation mean will lie within the confidence interval estimated, the remaining 20% will not. The 20% error or the number of times that the population mean will not lie within the confidence interval is called alpha $`\alpha`$ or level of significance.
 ## Level of Significance $`alpha(\alpha)`$
 Level of significance $`\alpha`$ is the probability that the true population mean **will not** lie within the confidence interval. For example, a confidence level of 80% will have a significance level of 20% or 0.2 z-score; this will be divided into 2 because the z-score lies above and below the mean i.e. one for the positive end and the other for the negative end. Therefore:
 
 $`0.2  level of significance = z_{\frac{\alpha}{2}} = z_{\frac{0.2}{2}}`$
 
-The closest value to 0.1 under the negative z-score table is in the -1.2 row under column 0.08; $`z_{\frac{0.2}{2}}`$ is 1.28 above the mean and -1.28 below the mean.
+The closest value to 0.1 under the negative z-score table is in the -1.2 row under column 0.08; $`z_{\frac{0.2}{2}}`$ is therefore 1.28 above the mean and -1.28 below the mean. See the table under [confidence interval and confidence level](#Confidence-Interval-and-Confidence-level) above for some estimated alpha $`\alpha`$.
 
 ## How to Calculate Confidence Interval
 Assuming I want to determiine whether I could achieve a 2000 daily sales of boxes of sugar cookies as the new manager of my store. I might have to use the cookie sales data from my store. While it might be challenging to use the whole population of the cookie sales data, relaying on the law of Central Limit Theorem, I can query the company's database, select at least 30 samples (using z-score), find the mean of the samples, its standard deviation and choose a confidence level. The confidence level is what helps us to determine what the alpha $`(\alpha)`$ will be. 
@@ -249,7 +248,7 @@ So, for a daily cookie sales of 30 number of samples with mean 1864,  standard d
 
 $`CI=1864\pm 1.96\sigma_{\bar{x}}`$ 
 
-Don't forget that $`\sigma_{\bar{x}}`$ is the standard error which is standard deviation divided by the square root of number of sample $`\sigma_{\bar{x}}`$= $`\frac{s}{\sqrt{n}}`$ I'm using sample standard deviation
+Don't forget that $`\sigma_{\bar{x}}`$ is the standard error which is standard deviation divided by the square root of number of sample $`\sigma_{\bar{x}}`$= $`\frac{s}{\sqrt{n}}`$ using sample standard deviation
 
 $`\sigma_{\bar{x}} = \frac{18}{\sqrt{30}}`$
 
@@ -265,9 +264,9 @@ I am now 95% confidence that the daily sales of boxes of sugar cookie is within 
 Assuming the higher management of my company said, look, you might have drawn from the most recent data; we use to sell an average of 1900 boxes of cookies per day. To cornfirm that the true mean of the population is 1900, I will have to conduct hypothesis testing.
 
 ## Hypothesis Testing
-Hypothesis testing is conducted to varify the validity of a claim about a population based on a single sample [cite]. To varify whether there is a significant difference between 1864 and 1900  sales of cookie boxes, I choose a 95% confidence interval i.e., alpha is 5% and  conducted my test as follows:
+Hypothesis testing is conducted to varify the validity of a claim about a population based on a single sample (Bob and Fatma 2016, p.206). To varify whether the true mean sales of cookie boxes is 1900, assume I selected a cookie sale of 42 number of samples and got a mean of 1872 with a standard deviation of 50 if I choose a 95% confidence interval i.e., alpha is 5% and  conducted my test as follows:
 
-**State my hypothesis**
+**State my hypothesis:** This is a two tail hypothesis because I'm using "equal to"  and "not equal to" to declare my mean.
 
 **Null Hypothesis $`H_{0}`$**: $`\mu = 1900`$
 
@@ -276,34 +275,21 @@ Hypothesis testing is conducted to varify the validity of a claim about a popula
 **Find the z-score for both means**:
 
 $`z=\frac{\bar{x}-\mu}{\sigma_{\bar{x}}}`$ Remember that $`\sigma_{\bar{x}} = \frac{s}{\sqrt n}`$
-$`\sigma_{\bar{x}} = \frac{18}{\sqrt 30}
-$`\sigma_{\bar{x}}=3.286
+$`\sigma_{\bar{x}} = \frac{50}{\sqrt 42}
+$`\sigma_{\bar{x}}=7.7148
 
-Therefore, $`z=\frac{1864-1900}{3.286}`$ = -10.956 as shown in the distribution below.
-![Distribution]()
+Therefore, $`z=\frac{1864-1900}{7.7148}`$ = -3.6294.
 
-Since the calculated z-score value falls outside the no-rejection area, I have to reject the null hypothesis $`H_{0}`$. Possibly, the data my colleague is talking about is an outdated data that does not reflect the current shopping attitude or taste of our customers. I have to go with what the customers want for now.
+To accept the null hypothsis that the average cookie sale is 1900 boxes per day, the calculates z-score must fall within the region of confidence interval selected which is 95% in this case with $`\alpha`$ of 5% and critical value of -1.96 and 1.96; any z-score value beyond these critical values will be rejected. 
+Since -3.6294 falls beyond -1.96, the null hypothsis must be rejected. I can now categorically say that the  mean sales of cookies is not 1900; at least, not for this current period. The data my colleague is referring to might no longer reflect the current shopping attitude or taste of our customers. I have to go with what the customers want for now.
 
-Let's assume that I've worked realy hard to meet my target sales of 2000 boxes per day, but there is a competitive company that is selling an average of 2100 boxes per day and I'm curious to know if there is any significant difference between their sales and ours? To varify this, I conducted another hypothesis test.
+Alternatively, I can check the z-score value on the normal distribution table to get the **p-value**. If the p-val is less than or equal  to `$\alpha`$ I will reject the null hypothesis but if it is greater, I will fail to reject the null hypothesis. In this scenario, the probability of z-score -3.6294 is 0.0001; but because my hypothesis is a two-tail test I will double 0.0001 therefore, my p-value is 0.0002 which is less than my alpha of 0.05. Therefore, I will reject the null hypothesis.  
 
+Let's assume that I've worked really hard to meet my target sales of 2000 boxes per day, but there is a competitive company that is selling an average of 2100 boxes per day and I'm curious to know if there is any significant difference between their sales and ours? To varify this, I conducted another hypothesis test.
 
+**Null Hypothesis $`H_{0}`$**: There is no significant difference between 2000 and 2100 boxes of cookies i., $`\mu `$
 
-**Null Hypothesis $`H_{0}`$**: There is no significant difference between 1864 and 1900 boxes of cookies i., $`\mu `$
-
-**Alternate Hypothesis $`H_{1}`$**: There is a significant differnce between 1864 and 1900 boxes of cookies i.e., $`\mu`$
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Alternate Hypothesis $`H_{1}`$**: There is a significant differnce between 2000 and 2100 boxes of cookies i.e., $`\mu`$
 
 
 
@@ -315,6 +301,7 @@ Let's assume that I've worked realy hard to meet my target sales of 2000 boxes p
 ***Reference***
 
 [1] Donnelly B. Jr., Abdel-Raouf F. (2016) "Idiot's Guides Statistics".
+[2] Charles W. (2013) "Naked Statistics".
 
 ***To be edited and continued!***
 
