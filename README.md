@@ -60,7 +60,7 @@ $$x_i$$ = from first observation to the last
 
 **Sample Mean**
 
-Sample mean is a subset of the population that represent the entire population. Taking the mean of the blue cars in your street as shown in [Cummulative Frequency Distribution](#cummulative-frequency-distribution) above is an example of sample mean i.e., Taking a daily sample of blue cars and then the average to represent the entire blue cars that pass on your street daily. The sample mean \bar{x} can be represented symbolically as:
+Sample mean is a subset of the population that represent the entire population. Taking the mean of the blue cars in your street as shown in [Cummulative Frequency Distribution](#cummulative-frequency-distribution) above is an example of sample mean i.e., Taking a daily sample of blue cars and then the average to represent the entire blue cars that pass on your street daily. The sample mean $`\bar{x}`$ can be represented symbolically as:
 
 $`\bar{x} = \frac{\sum_{i=1}^n x_i}{n}`$
 
@@ -148,7 +148,7 @@ $`s=\sqrt{366}`$
 $`s=19.1`$
 
 ## Example Application of Standard Deviation
-Consider the sample mean of 312.86 under sample [variance](#variance) table above, imagine that we have a sale of $`$350`$, that would be about 2 standard deviation to the right from the mean. While a sale of $`$260`$ would be more than 2 standard deviation to the left from the mean.
+Consider the sample mean of 312.86 under sample [variance](#variance) table above, imagine that we have a sale of $`$350`$, that would be about 2 standard deviations to the right from the mean. While a sale of $`$260`$ would be more than 2 standard deviations to the left from the mean.
 
 ![sample_Sd and cookie sale](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/applic_sd.png)
 
@@ -200,7 +200,9 @@ $`z=\frac{x-\mu}{\sigma}`$
 
 $`z= \frac{2000-1372.72}{823.52}`$
 
-$`z=0.7617`$ Meaning 2000lb harvest is only 0.7617 standard deviation away from mean. The probability of this z-score (0.7617) is then checked on the normal distribution table. 
+$`z=0.7617`$ 
+
+Meaning 2000lb harvest is only 0.7617 standard deviation away from mean. The probability of this z-score (0.7617) is then checked on the normal distribution table. 
 
 ## How to Check Z-score Probability on a Normal Distribution Table
 For a z-score of 0.7617, the first two values fall under z column on the table i.e check for 0.7 row under z, now we are left with 0.0617, check for 0.06 on the top-most row on the table and correspond it to the 0.7 row; e.g., 0.7 row under column 0.06 (Yes! only the 1st 3 values are used) resulting into 0.7617. See [the normal distribution table](https://z-table.com/) for samples.
@@ -210,6 +212,7 @@ Therefore, my harvest with z-score 0.7617 has the probability of 0.7764 i.e. 77.
 To check if harvest could be greater than 2000lb:
 
 $`P(harvest>0.7764) = 1 - 0.7764`$ (since the whole normal distribution area is 1)
+
 $`P(harvest>0.7764) = 0.2236 or 22.36%`$
 
 The probability of harvesting 300lb or less  will be
@@ -285,11 +288,38 @@ Since -3.6294 falls beyond -1.96, the null hypothsis must be rejected. I can now
 
 Alternatively, I can check the z-score value on the normal distribution table to get the **p-value**. If the p-val is less than or equal  to `$\alpha`$ I will reject the null hypothesis but if it is greater, I will fail to reject the null hypothesis. In this scenario, the probability of z-score -3.6294 is 0.0001; but because my hypothesis is a two-tail test I will double 0.0001 therefore, my p-value is 0.0002 which is less than my alpha of 0.05. Therefore, I will reject the null hypothesis.  
 
-Let's assume that I've worked really hard to meet my target sales of 2000 boxes per day, but there is a competitive company that is selling an average of 2100 boxes per day and I'm curious to know if there is any significant difference between their sales and ours? To varify this, I conducted another hypothesis test.
+**Hypothesis Test for two different means**
+Let's assume there is theory that says shoppers do not mind buying inorganic bananas because organic bananas are expensive; I doubt it and so quikly become Sherlock Holmes in the malls to investigate the prices of organic and inorganic bananas. I found out that the average price of organic banana per pound across 33 different malls is $0.87 with a standard deviation of 0.23 while that of inorganic is 0.76 with a standard deviation of 0.19. To check whether there is a significant difference between the price of organic and inorganic bananas, I conducted an hypothesis test. 
 
-**Null Hypothesis $`H_{0}`$**: There is no significant difference between 2000 and 2100 boxes of cookies i., $`\mu `$
+I stated my hypothesis as:
 
-**Alternate Hypothesis $`H_{1}`$**: There is a significant differnce between 2000 and 2100 boxes of cookies i.e., $`\mu`$
+**Null Hypothesis $`H_{0}`$**: There is no significant difference between the prices of organic and inorganic bananas i.e, $`\mu_{1}-\mu_{2}=0`$
+
+**Alternate Hypothesis $`H_{1}`$**: There is a significant differnce between the prices of organic and inorganic bananas i.e., $`\mu_{1}-\mu_{2}\neq 0`$
+
+Standardizing my observations with z-score I used:
+
+$`z=\frac{(\bar{x}_{1}-\bar{x}_{2})-(\mu_{1}-\mu_{2})}{\sigma_{\bar{x}_{1}- {\bar{x}_{2}}}}`$
+
+$`z=\frac{(\bar{x}_{1}-\bar{x}_{2})-\mu_{1}+\mu_{2}}{\sigma_{\bar{x}_{1}- {\bar{x}_{2}}}}`$
+
+Since $`-\mu_{1}+\mu_{2} = 0`$, 
+
+$`z=\frac{\bar{x}_{1}-\bar{x}_{2}}{\sigma_{\bar{x}_{1}-{\bar{x}_{2}}}}`$
+
+But because $`\sigma_{\bar{x}_{1}-{\bar{x}_{2}}}=\sqrt{\frac{\sigma^2_{1}}{n_{1}}+\frac{\sigma^2_{2}}{n_{2}}}`$
+
+$`z=\frac{\bar{x}_{1}-\bar{x}_{2}}{\sqrt{\frac{\sigma^2_{1}}{n_{1}}+\frac{\sigma^2_{2}}{n_{2}}}}`$
+
+Therefore, $`\sigma_{\bar{x}_{1}-{\bar{x}_{2}}}=\sqrt{\frac{(0.23)^2}{33}+\frac{(0.19)^2}{33}}`$ = $`\sqrt{\frac{0.0529}{33}+\frac{0.0361}{33}}`$=$`\sqrt{\frac{0.089}{33}}`$ = $`\sqrt{0.002697}`$= 0.052
+
+Now, $`z=frac{0.87-0.76}{0.052}`$ =$`frac{0.11}{0.052}=2.115
+
+If I use a confidence interval of 95% meaning my alpha or level of significance will be 0.05. The critical z-score value for alpha ($`\alpha`$) is always between -1.96 and 1.96; the banana z-score is outside these ranges, therefore, I will reject the null hypothesis and accept the alternate hypothesis. There is a significant difference between the price of organic and inorganic bananas. 
+
+Using P-val to determine my hypothesis, the probability value of z=2.115 from Normal Distribution table is 0.9826; this represent the probability of values less than or equal to z=2.115. To find the probability of values that are greater than z=2.115, subtract 0.9826 from 1 this equals 0.0174. But because there are two tail regions of alpha, 0.0172 is multiplied by 2 which equals 0.0348.Because my p-val(0.0348) is less than alpha of 0.05 I will reject the null hypothesis and accept the alternate hypothesis. There is indeed a significant difference between the price of organic and inorganic bananas.
+
+## The T-Distribution
 
 
 
