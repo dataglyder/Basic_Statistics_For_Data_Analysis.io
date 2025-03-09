@@ -229,10 +229,10 @@ $`P(harvest>0.0968)= 1- 0.0968=0.9032 or 90.32%
 
 ## Estimating from Samples
 In a real world scnenario,the whole population might be too large to work with therefore, it's much easier to work with  sample. Any sampling method used must be a representative of the entire population. A minimum of 30 number of samples is needed when z-score is being used for standardization. As long as the sampling method is not biased,  the law of central limit theorem assured us that the sample will be good enough to represent the entire population.
-## The central Limit Theorem
+## The Central Limit Theorem
 The central limit theorem states that if the number of samples chosen from a population is large enough, the sample means will follow a normal probability distribution irrespective of the shape of the original population. That's a good news! So, the normal distribution, could be used to make inferences about the data. Since the normal distribution is a continuous distribution, a range or interval for estimates could be established with the Confidence interval.
 
-## Confidence Interval and Confidence level
+## Confidence Interval and Confidence Level
 Confidence interval is a range of values for estimating population parameters and it confidence level might include 80%, 90%, 95%, 99% etc of the normal distribution.The table below shows some examples of confidence intervals and confidence levels.
 ![Sample Confidence_level_interval](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/con_level_inervl.png) Suppose I use 80% confidence interval, this means that I'm 80% confident that the true polpuation mean will lie within the confidence interval estimated, the remaining 20% will not. The 20% error or the number of times that the population mean will not lie within the confidence interval is called alpha $`\alpha`$ or level of significance.
 ## Level of Significance $`alpha(\alpha)`$
@@ -278,12 +278,14 @@ Hypothesis testing is conducted to varify the validity of a claim about a popula
 **Find the z-score for both means**:
 
 $`z=\frac{\bar{x}-\mu}{\sigma_{\bar{x}}}`$ Remember that $`\sigma_{\bar{x}} = \frac{s}{\sqrt n}`$
-$`\sigma_{\bar{x}} = \frac{50}{\sqrt 42}
-$`\sigma_{\bar{x}}=7.7148
+
+$`\sigma_{\bar{x}} = \frac{50}{\sqrt 42}`$
+
+$`\sigma_{\bar{x}}=7.7148`$
 
 Therefore, $`z=\frac{1864-1900}{7.7148}`$ = -3.6294.
 
-To accept the null hypothsis that the average cookie sale is 1900 boxes per day, the calculates z-score must fall within the region of confidence interval selected which is 95% in this case with $`\alpha`$ of 5% and critical value of -1.96 and 1.96; any z-score value beyond these critical values will be rejected. 
+To accept the null hypothsis that the average cookie sale is 1900 boxes per day, the calculated z-score must fall within the region of confidence interval selected which is 95% in this case with $`\alpha`$ of 5% and critical value of -1.96 and 1.96; any z-score value beyond these critical values will be rejected. 
 Since -3.6294 falls beyond -1.96, the null hypothsis must be rejected. I can now categorically say that the  mean sales of cookies is not 1900; at least, not for this current period. The data my colleague is referring to might no longer reflect the current shopping attitude or taste of our customers. I have to go with what the customers want for now.
 
 Alternatively, I can check the z-score value on the normal distribution table to get the **p-value**. If the p-val is less than or equal  to `$\alpha`$ I will reject the null hypothesis but if it is greater, I will fail to reject the null hypothesis. In this scenario, the probability of z-score -3.6294 is 0.0001; but because my hypothesis is a two-tail test I will double 0.0001 therefore, my p-value is 0.0002 which is less than my alpha of 0.05. Therefore, I will reject the null hypothesis.  
@@ -315,11 +317,46 @@ Therefore, $`\sigma_{\bar{x}_{1}-{\bar{x}_{2}}}=\sqrt{\frac{(0.23)^2}{33}+\frac{
 
 Now, $`z=frac{0.87-0.76}{0.052}`$ =$`frac{0.11}{0.052}=2.115
 
-If I use a confidence interval of 95% meaning my alpha or level of significance will be 0.05. The critical z-score value for alpha ($`\alpha`$) is always between -1.96 and 1.96; the banana z-score is outside these ranges, therefore, I will reject the null hypothesis and accept the alternate hypothesis. There is a significant difference between the price of organic and inorganic bananas. 
+If I use a confidence interval of 95% meaning my alpha or level of significance will be 0.05. The critical z-score value for alpha ($`\alpha`$) is between -1.96 and 1.96; the banana z-score (2.115) is outside these ranges, therefore, I will reject the null hypothesis and accept the alternate hypothesis. There is a significant difference between the price of organic and inorganic bananas. 
 
 Using P-val to determine my hypothesis, the probability value of z=2.115 from Normal Distribution table is 0.9826; this represent the probability of values less than or equal to z=2.115. To find the probability of values that are greater than z=2.115, subtract 0.9826 from 1 this equals 0.0174. But because there are two tail regions of alpha, 0.0172 is multiplied by 2 which equals 0.0348.Because my p-val(0.0348) is less than alpha of 0.05 I will reject the null hypothesis and accept the alternate hypothesis. There is indeed a significant difference between the price of organic and inorganic bananas.
 
 ## The T-Distribution
+T-distribution is used when the population standard deviation is unknown and the number of sample (n) is small i.e under 30. The thing is that the population standard devition is rarely known while analysing big data; we rely on the law of [Central Limit Theorem](#the-central-limit-theorem) to analyse the whole population using the sample collected. In a situation where sample is used - the sample mean and standard deviation replace that of the population and the number of sample is small, the t-distribution is a better choice. When using t-distribution it is important to know the [degree of freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)), choose a [confidence level and alpha($`\alpha`$)](https://datatab.net/tutorial/t-distribution).   
+## How to Calculate Confidence Interval Using the T-Distribution
+Let's say I want to know my chances of seeing a brown dog walking with its owner on the street of Colorado. If I choose 13 county in Colorado and find the mean of brown dogs walking with thier owner to be 14 (I might have exagerated a bit but seriously, Colorado is very dog friendly) with a standard deviation of 3 and I choose a confidence level of 90%; I can calculate the confidence interval as follows:
+
+confidence interval=$`\bar{x}\pm t_{\frac{\alpha}{2}}s_{\bar{x}}`$ where 
+
+$`\bar{x}\pm t_{\frac{\alpha}{2}}s_{\bar{x}}`$ is called the margine of error
+
+$`\bar{x}=the mean`$ = 14
+
+$`t_{\frac{\alpha}{2}}`$ = the row of the degree of freedom being used under the column of the confidence level or alpha selected. In this case, degree of freedom (df) is n-1 =13-1 =12 and the confident level is 90 or 0.9 and alpha 0.05 (0.10/2). Therefore, $`\alpha=1.782`$ i.e 12 df under confidence level of 90 or alpha 0.05.
+
+$`s_{\bar{x}}`$ = standard error = $`\frac{s}{\sqrt{n}}`$ where
+
+s= standard deviation = 3
+
+n=number of sample = 13
+
+$`s_{\bar{x}} = \frac{3}{\sqrt{13}}`$ = $`\frac{3}{3.606}`$ = 0.83
+
+Therefore, confidence interval=$`14\pm (1.782)(0.83)`$ = $`14\pm \approx2 
+
+the lower level of the confidence interval = 14 - 2 = 12
+
+upper level of the confidence interval = 14 + 2 = 16
+
+This means that the the true population mean is expected to fall within the range of 12 and 16.
+
+
+
+
+
+
+
+
 
 
 
