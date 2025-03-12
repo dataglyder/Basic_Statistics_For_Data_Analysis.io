@@ -234,7 +234,9 @@ The central limit theorem states that if the number of samples chosen from a pop
 
 ## Confidence Interval and Confidence Level
 Confidence interval is a range of values for estimating population parameters and it confidence level might include 80%, 90%, 95%, 99% etc of the normal distribution.The table below shows some examples of confidence intervals and confidence levels.
-![Sample Confidence_level_interval](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/con_level_inervl.png) Suppose I use 80% confidence interval, this means that I'm 80% confident that the true polpuation mean will lie within the confidence interval estimated, the remaining 20% will not. The 20% error or the number of times that the population mean will not lie within the confidence interval is called alpha $`\alpha`$ or level of significance.
+![Sample Confidence_level_interval](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/con_level_inervl.png) 
+
+Suppose I use 80% confidence interval, this means that I'm 80% confident that the true polpuation mean will lie within the confidence interval estimated, the remaining 20% will not. The 20% error or the number of times that the population mean will not lie within the confidence interval is called alpha $`\alpha`$ or level of significance.
 ## Level of Significance $`alpha(\alpha)`$
 Level of significance $`\alpha`$ is the probability that the true population mean **will not** lie within the confidence interval. For example, a confidence level of 80% will have a significance level of 20% or 0.2 z-score; this will be divided into 2 because the z-score lies above and below the mean i.e. one for the positive end and the other for the negative end. Therefore:
 
@@ -267,7 +269,10 @@ I am now 95% confidence that the daily sales of boxes of sugar cookie is within 
 Assuming the higher management of my company said, look, you might have drawn from the most recent data; we use to sell an average of 1900 boxes of cookies per day. To cornfirm that the true mean of the population is 1900, I will have to conduct hypothesis testing.
 
 ## Hypothesis Testing
-Hypothesis testing is conducted to varify the validity of a claim about a population based on a single sample (Bob and Fatma 2016, p.206). To varify whether the true mean sales of cookie boxes is 1900, assume I selected a cookie sale of 42 number of samples and got a mean of 1872 with a standard deviation of 50 if I choose a 95% confidence interval i.e., alpha is 5% and  conducted my test as follows:
+Hypothesis testing is conducted to varify the validity of a claim about a population based on a single sample (Bob and Fatma 2016, p.206). There are two tail hypothesis test that are  usually associated with equal to (=) and not equal to ($`\neq`$) and a one tail hypothesis test that are associted with greater than (>), greater than or equal to ($`\geq`$), less than (<), and les than or equal to($`\leq`$) .
+
+**Example Usage of Hypothesis Test**
+To varify whether the true mean sales of cookie boxes is 1900, assuming that I selected a cookie sale of 42 number of samples and got a mean of 1872 with a standard deviation of 50 if I choose a 95% confidence interval i.e., alpha is 5% and  conducted my test as follows:
 
 **State my hypothesis:** This is a two tail hypothesis because I'm using "equal to"  and "not equal to" to declare my mean.
 
@@ -305,7 +310,7 @@ $`z=\frac{(\bar{x}_{1}-\bar{x}_{2})-(\mu_{1}-\mu_{2})}{\sigma_{\bar{x}_{1}- {\ba
 
 $`z=\frac{(\bar{x}_{1}-\bar{x}_{2})-\mu_{1}+\mu_{2}}{\sigma_{\bar{x}_{1}- {\bar{x}_{2}}}}`$
 
-Since $`-\mu_{1}+\mu_{2} = 0`$, 
+Since $`\mu_{1}-\mu_{2} = 0`$, 
 
 $`z=\frac{\bar{x}_{1}-\bar{x}_{2}}{\sigma_{\bar{x}_{1}-{\bar{x}_{2}}}}`$
 
@@ -348,13 +353,44 @@ the lower level of the confidence interval = 14 - 2 = 12
 
 upper level of the confidence interval = 14 + 2 = 16
 
-This means that the the true population mean is expected to fall within the range of 12 and 16.
+This means that the the true population mean of dogs walking with their owners in Colorado is expected to fall within the range of 12 and 16.
 
 
+## Hypothesis Testing with T-Distribution
+Imagine the declaration that people visit their local library more than 4 times in a week. I can conduct hypothesis test to varify this claim. Assuming that I gathered some data and find the average time that people visit their local library per week to be 2 with a standard deviation of 1. Let's say I choose an alpha of 0.05, I can proceed with my varification as follows:
 
+State my hypothesis
 
+**Null Hypothesis $`H_{0}`$**: People visit the library more than 4 times in a week; $`\mu\geq 4`$
 
+**Alternate Hypothesis $`H_{1}`$**: People visit the library less than 4 times in week; $`\mu < 4`$
 
+Calculate the t-test using $`t=\frac{\bar{x}-\mu}{s_{\bar{x}}}`$
+
+since $`s_{\bar{x}}=\frac{s}{\sqrt{n}}`$ =$`\frac{1}{\sqrt{7}}`$=$`\frac{1}{2.646}`$ =0.3779
+
+$`t= \frac{2-4}{0.3779}`$ = $`\frac{-2}{0.3779}`$ =-5.3
+
+My df = n-1 = 7-1=6 under alpha 0.05 = 2.447
+
+Using the left tail of a one tail hypothesis test, the critical t-value 2.447 indicates the region from -2.447 to the right end of the distribution i.e the greater than or equal to($`\geq`$) area as indicated in $`H_{0}`$; this is the do not reject region. My calculated value -5.3 falls below this region i.e., the reject region. Since the calculated value falls within the rejection region, I will reject the null hypothesis and accept the alternative;people visit the library less than 4 times in a week. 
+
+## T-Distributions and Differences in Two Means
+Let's say there is a local Coloradoan that claimed to have seen it all and that there are equal number of black and brown dogs in Colorado. Assume that I call some random dog owners across 19 counties in Colorado and gather the following information to varify his claim.
+
+mean of black dogs = 9 with standard deviation of 4
+
+mean of brown dogs = 12 with standard deviation of 5
+
+There are two ways to go about this.
+
+**1.** I might assume that the variaces of the two dogs are equal. With this assumption, I will have to pool the two variances i.e., average them. Pooled variances  is used when the variances of the two populations are assumed to be equal and therefore averaged using the formular: 
+
+Pooled variance $`S^2_{p}= \frac{(n_{1}-1)s^2_{1}+(n_{2}-1)s^2_{2}}{n_{1}+n_{2}-2}`$.
+
+Therefore, to calculate the t-test statistics for equal population variances, the formular is:
+
+$`t=(\bar{x}_{1}-\bar{x}_{2})-(\mu_{1}-\mu_{2})`$
 
 
 
@@ -368,6 +404,7 @@ This means that the the true population mean is expected to fall within the rang
 ***Reference***
 
 [1] Donnelly B. Jr., Abdel-Raouf F. (2016) "Idiot's Guides Statistics".
+
 [2] Charles W. (2013) "Naked Statistics".
 
 ***To be edited and continued!***
