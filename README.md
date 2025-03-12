@@ -375,8 +375,8 @@ My df = n-1 = 7-1=6 under alpha 0.05 = 2.447
 
 Using the left tail of a one tail hypothesis test, the critical t-value 2.447 indicates the region from -2.447 to the right end of the distribution i.e the greater than or equal to($`\geq`$) area as indicated in $`H_{0}`$; this is the do not reject region. My calculated value -5.3 falls below this region i.e., the reject region. Since the calculated value falls within the rejection region, I will reject the null hypothesis and accept the alternative;people visit the library less than 4 times in a week. 
 
-## T-Distributions and Differences in Two Means
-Let's say there is a local Coloradoan that claimed to have seen it all and that there are equal number of black and brown dogs in Colorado. Assume that I call some random dog owners across 19 counties in Colorado and gather the following information to varify his claim.
+## Hypothesis Testing with T-Distribution and Differences in Two Means
+Let's say there is a local Coloradoan that claimed to have seen it all and that he believes there are equal number of black and brown dogs in Colorado. Assume that I call some random dog owners across 19 counties in Colorado and gather the following information to varify his claim.
 
 mean of black dogs = 9 with standard deviation of 4
 
@@ -386,20 +386,62 @@ There are two ways to go about this.
 
 **1.** I might assume that the variaces of the two dogs are equal. With this assumption, I will have to pool the two variances i.e., average them. Pooled variances  is used when the variances of the two populations are assumed to be equal and therefore averaged using the formular: 
 
-Pooled variance $`S^2_{p}= \frac{(n_{1}-1)s^2_{1}+(n_{2}-1)s^2_{2}}{n_{1}+n_{2}-2}`$.
+Pooled variance $`S^2_{p}= \frac{(n_{1}-1)s^2_{1}+(n_{2}-1)s^2_{2}}{n_{1}+n_{2}-2}`$ while the pool standard deviation $`S_{p}`$ is $`\sqrt{S^2_{p}}`$
 
 Therefore, to calculate the t-test statistics for equal population variances, the formular is:
 
-$`t=(\bar{x}_{1}-\bar{x}_{2})-(\mu_{1}-\mu_{2})`$
+$`t=\frac{(\bar{x}_{1}-\bar{x}_{2})-(\mu_{1}-\mu_{2})}{S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}} `$
 
+Now, I can state my hypothesis:
 
+**Null Hypothesis $`H_{0}`$**: Number of black and brown dogs in Colorado are equal: $`\mu_{1} -\mu_{2}=0`$
 
+**Alternate Hypothesis $`H_{1}`$**: Number of brown black and brown dogs in Colorado are not equal: $`\mu_{1} -\mu_{2}\neq0`$
 
+I will calculate the pooled standard deviation $`S_{p}`$ first by taking the square root of the pooled variance.
+
+$`S_{p}`$ =$` \sqrt{\frac{(n_{1}-1)s^2_{1}+(n_{2}-1)s^2_{2}}{n_{1}+n_{2}-2}}`$
+
+$`S_{p} = \sqrt{\frac{(19-1)4^2+(19-1)5^2}{19+19-2}}`$
+
+$`S_{p} = \sqrt{\frac{(18)16+(18)25}{36}}`$
+
+$`S_{p} = \sqrt{\frac{288+450}{36}}`$ = $`\sqrt{\frac{738}{36}}`$ = $`\sqrt{20.5}`$ =4.53
+
+I can now calculate t-statistics $`t =\frac{(\bar{x}_{1}-\bar{x}_{2})-(\mu_{1}-\mu_{2})}{S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}} `$
+
+$`t=\frac{(9-12)-0}{4.53\sqrt{\frac{1}{19}+\frac{1}{19}}} `$ = $`\frac{(-3)-0}{4.53\sqrt{0.05263 + 0.05263}} `$ = $`\frac{-3}{4.53\sqrt{0.10526}} `$ 
+
+$`t =\frac{-3}{1.47} `$ = -2.04
+
+Using alpha $`\alpha`$ 0.05 and with df = 19+19 -2 = 36. **Note** that the degree freedom 36 is not present on the t-distribution table but because the sample "n" is large, I assume it's gradually approaching normal distribution and therefore round up to 40 instead of rounding down to 30. Therefor, my critical t-statistics will be 40 df under two tail $`\alpha`$ 0.05 = 2.021. My calculated t-statistics -2.04 slightly falls outside the range between my critical t-statistics -2.021 and 2.021. I will still reject the null hypothesis and accept the alternate hypothesis.
+
+**2.** The second method to approach t-statistics with two differences in means is to assume that the variances are not equal. So, in this same example of black and brown dogs, I can assume that the variances of the two samples are not equal. With this assumption,the formular below has to be used.
+
+$`t=\frac{(\bar{x}_{1}-\bar{x}_{2})-(\mu_{1}-\mu_{2})}{\sqrt{\frac{s^2_{1}}{n_{1}}+\frac{s^2_{2}}{n_{2}}}} `$ 
+
+The degree of freedom will be computed also using:
+
+$`df=\frac{\left(\frac{s^2_{1}}{n_{1}}+\frac{s^2_{2}}{n_{2}}\right)^2}{\frac{\left(\frac{s^2_{1}}{n_{1}}\right)^2} {n_{1}-1}+ \frac{\left(\frac{s^2_{2}}{n_{2}}\right)^2}{n_{2}-1}}`$
+
+Now, I can state my hypothesis as follows: 
+
+**Null Hypothesis $`H_{0}`$**: Number of black and brown dogs in Colorado are equal: $`\mu_{1} -\mu_{2}=0`$
+
+**Alternate Hypothesis $`H_{1}`$**: Number of brown black and brown dogs in Colorado are not equal: $`\mu_{1} -\mu_{2}\neq0`$
+
+$`t=\frac{(9-12)-0}{\sqrt{\frac{4^2}{19}+\frac{5^2}{19}}}`$=$`\frac{-3}{\sqrt{\frac{16}{19}+\frac{25}{19}}}`$=$`\frac{-3}{\sqrt{0.8421+1.3158}}`$=$`\frac{-3}{1.469}`$ = -2.042
+
+$`df =\frac{\left(\frac{4^2}{19}+\frac{12^2}{19}\right)^2}{\frac{\left(\frac{4^2}{19}\right)^2} {19-1}+ \frac{\left(\frac{12^2}{19}\right)^2}{19-1}}`$
+
+$`df =\frac{\left(2.1579\right)^2}{\frac{\left(0.7091\right)} {18}+ \frac{\left(1.7313)\right)}{18}}`$=34.34
+
+Using $`alpha`$ = 0.05, and rounding my df to 30,my critical t value = 2.042. Since my calculated t-statistics is just right at the lower boundary of the critical t-value, I will fail to reject the null hypothesis.
 
 
 
 ---
-***For further reading, you can check the reference for books that I found helpful.***
+***Please note that all the data that are used in this analysis are assumed data; none of them is from a real. For further reading, you can check the reference for books that I found helpful.***
 
 ***Reference***
 
