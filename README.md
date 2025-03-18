@@ -1,8 +1,8 @@
 ## Data Analysts and Statistics
-Data Analysts and Scientists adopt some  statistics in their applications to solve problems. I looked at some of the basic ones that are commonly used for data analysis. But before then, let's,  talk about table.
+Data Analysts and Scientists adopt some  statistics in their applications to solve problems. I looked at some of the basic ones that are commonly used for data analysis. But before then, let's  talk about table.
 
 ## Table
-I didn't mean the type your PC is sitting on right now; neither I'm I talking about the type where you set and enjoy your meal! Just kidding. Statistical tables are structured ways of presenting data in rows and columns.
+I didn't mean the type your PC is sitting on right now; neither I'm I talking about the type where you set and enjoy your meal, just kidding. Statistical tables are structured ways of presenting data in rows and columns.
 
 **A Table with Rows and Columns**
 
@@ -31,7 +31,7 @@ Contigency tables are used to represent variables that are more than one. Consid
 ## Descriptive Statistics
 Descriptive statistics involves the use of ***measures of central tendency*** and ***measures of dispersion*** to gain knowledge and also probably make decisions about data.
 ## Measures of Central Tendency
-Measures of central tendency are the mean, meadian and mode - they return a single value as the center point of the data (Bob and Fatma 2016, p.50)[1]. They are very easy to calculate with data analytic tools, like spreadsheets(Google sheet and Microsoft Excel Sheet), python and R especially with large data. But in this write up, I'm going to do them the traditional way.
+Measures of central tendency are the mean, meadian and mode - they return the summary of a data with just a single value. They are very easy to calculate with data analytic tools, like spreadsheets(Google sheet and Microsoft Excel Sheet), python and R especially with large data. But in this write up, I'm going to do them the traditional way.
 ## Mean
 It's the average; calculated by adding all the observations and dividing by the total number of observations. So, from the [Cummulative Frequency Distribution](#cummulative-frequency-distribution) table above, $`\ mean = 236/7`$ which is  $`\simeq 34`$.
 
@@ -77,8 +77,9 @@ $$x_i$$ = from first observation to the last
 
 Therefore, from table 2, sample mean $`\bar{x} `$ will be:
 
-$$\bar{x} = \frac{30 + 35 + 29 + 34 + 42 + 35 + 31}{7}$$
-$$\bar{x} = 34$$
+$`\bar{x} = \frac{30 + 35 + 29 + 34 + 42 + 35 + 31}{7}`$
+
+$`\bar{x} = 34`$
 
 **Note**
 
@@ -93,12 +94,12 @@ The down side of using mean is that it can easily be influenced by outliers. out
 The median is the value that falls at the middle of a distribution after arranging the distribution in an ascending order. These set of values
 $`6, 9, 25, 8, 7, 1, 5`$ will have a median of 7 i.e $`1, 5, 6, 7, 8, 9, 25`$ while in $`1, 7, 5, 8, 9, 25`$, the median is 7.5 i.e., arrange the values in ascending order, take the two middle ones, add them together and divide by 2. 
 
-**Note** The benefit of using median is that it is not affected by outliers e.g. 1 and 25 in the set examples. 
+**Note** The benefit of using median is that it is not affected by outliers e.g. 1 and 25 in the set examples are outliers but they do not have any chance to influence the result (median). 
 ## Mode
-The mode is the value that appears most in an array of observations. In $`4, 4, 4, 4, 0, 0, 8, 8, 8, 8, 8, 8, 2, 2, 2, 2, 2, 2, 2, 2, 2`$, the mode is 2.
+The mode is the value that appears most in an array of observations. In $`4, 4, 4, 4, 0, 0, 8, 8, 8, 8, 8, 8, 2, 2, 2, 2, 2, 2, 2, 2, 2`$, the mode is 2-it appears more than any other value in the list of numbers.
 
 ## Measures of Despersion
-Measures of dispersion indicate the spread of data around the mean. Variance, Standard Deviation and Range are examples of measures of despersion.
+Measures of dispersion indicate the spread of data around the mean. Variance and Standard Deviation are examples of measures of despersion.
 ## Variance
 The variance is the square of the desperse of the data devided by frequency count if dealing with a population or devided by frequency count minus one while dealing with a sample. It could be expressed symbolically as shown below.
 
@@ -120,11 +121,11 @@ As the manager of my department, assuming I want to know the variance in sales o
 
 ![cookie_table](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/cookie_sale.png)
 
-$`s^2=\frac{2192.86}{6}`$
+$`s^2=\frac{2192.86}{7-1}`$ = $`\frac{2192.86}{6}`$
 
 $`s^2\simeq366`$
 
-***Note*** In simple term, each tomato weight is approximately 44 square unit away from the mean while each sugar cookie sale is approximately 366 square unit away from the mean. In other to understand better how far these observations are away from the mean, we take the square root of variance; this, is equivalent to standard deviation.
+***Note*** Be careful with the symbols that are used to represent population variance ($`\sigma`$) and sample variance (s) and also note the changes in the numerator of their equations. In simple term, each tomato weight is approximately 44 square unit away from the mean while each sugar cookie sale is approximately 366 square unit away from the mean. In other to understand better how far these observations are away from the mean, we take the square root of variance; this, is equivalent to standard deviation.
 
 ## Standard Deviation
 The standard deviation is the square root of variance; $`\sigma=\sqrt{\sigma^2}`$.
@@ -156,19 +157,20 @@ Consider the sample mean of 312.86 under sample [variance](#variance) table abov
 Still on the [sample variance](#variance) cookie sale, suppose there is a very good day in summer with a lot of parties, and out doors activities that resulted into a sale of $2000 dollars,  or  a 3 days inclement weather that resulted into drop in sale i.e., #50 per day. Of course, these might be regarded as outliers; but should the bumper sale continue throughout the summer and the low sale period extend to all winter. The measures of central tendency and dispersion might not be ideal enough to give us the best insight into the down, peak and low periods within the data; this is where inferencial statistics and the standard normal probability distribution come into play. Inferencial statistics entails making judgement about the whole data population by using just a small portion of the data. 
 
 ## The Normal Probability Distribution
-Normal probability distribution is a curve that follows a bell shape. Let's say I've upgraded and I now cultivate hectares of tomatoes farm, in my harvesting season; the harvest is low at the beginnig and gradually increase until it reaches the peak of the season and then start declining until the end of the season. The kind of shape gotten from this illustration is the normal distribution curve but with some unique attributes to the statistical normal distribution itself.
+Normal probability distribution is a curve that follows a bell shape. Let's say I've upgraded and I now cultivate hectares of tomatoes farm; in my harvesting season, the harvest is low at the beginnig and gradually increase until it reaches the peak of the season and then start declining until the end of the season. The kind of shape gotten from this illustration is the normal distribution curve but with some unique attributes to the statistical normal distribution itself.
 
-**(1)** The total area under the normal distribution is 1
+**(1)** The total area under the normal distribution is 1.
 
-**(2)** The mean is zero and it has standard deviation of 1.
+**(2)** The mean is zero and its standard deviation is 1.
 
 **(3)** The mean and the standard deviation are on the x- axis while the y-axis represents the probability density of the data being analysed.
 
 **(4)** Both ends of the curve extend to infinity; starting from 0 (mean) to the right extend to positive infinity while from 0 (mean) to the left extend to negative infinity. The positivity and negativity  indicate that the standdard deviation lies above or below the mean respectively.
+## The Normal Distribution Curve
 ![Probability Density Curve](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/norm11.png)
 
 ## Standardizing Data with the Z-score
-To use standard normal distribution to make inference about data, the data must be normally distributed i.e. follow the kind of curve described above, then it could be standardized with a z-score. using the formular:
+To use standard normal distribution to make inference about data, the data should be or assumed to be normally distributed i.e. follow the kind of curve described above, then it could be standardized with a z-score. using the formular:
 
 z=$`\frac{x-\mu}{\sigma}`$ Where:
 
@@ -205,9 +207,9 @@ $`z=0.7617`$
 Meaning 2000lb harvest is only 0.7617 standard deviation away from mean. The probability of this z-score (0.7617) is then checked on the normal distribution table. 
 
 ## How to Check Z-score Probability on a Normal Distribution Table
-For a z-score of 0.7617, the first two values fall under z column on the table i.e check for 0.7 row under z, now we are left with 0.0617, check for 0.06 on the top-most row on the table and correspond it to the 0.7 row; e.g., 0.7 row under column 0.06 (Yes! only the 1st 3 values are used) resulting into 0.7617. See [the normal distribution table](https://z-table.com/) for samples.
+For a z-score of 0.7617, the first two values fall under z column on the [table](https://z-table.com/)  i.e check for 0.7 row under z, now we are left with 0.0617, check for 0.06 on the top-most row on the table and correspond it to the 0.7 row; e.g., 0.7 row under column 0.06 (Yes! only the 1st 3 values are used) resulting into 0.7617. See [the normal distribution table](https://z-table.com/) for samples.
 
-Therefore, my harvest with z-score 0.7617 has the probability of 0.7764 i.e. 77.64% chance of harvesting 2000lb of tomatoes.
+Therefore, my harvest with z-score 0.7617 has the probability of 0.7764 i.e. 77.64% chance of harvesting 2000lb of tomatoes. This estimate covers all harvest that are less than or equal to 2000lb of harvest.
 
 To check if harvest could be greater than 2000lb:
 
@@ -219,13 +221,11 @@ The probability of harvesting 300lb or less  will be
 $`z= \frac{300-1372.72}{823.52}`$
 $`z = -1.3026`$ This means that getting a harvest of 300lb is 1.3 standard deviation below the mean i.e., to the left. 
 
-Using the normal distribution table, the probability of harvesting 300lb of tomateos with a z-score of -1.3026 is 0.0968 i.e. 9.68% (***Check under the negative z-score table for a negative z-score.***)
+Using the normal distribution table, the probability of harvesting 300lb of tomateos with a z-score of -1.3026 is 0.0968 i.e. 9.68% (***Check under the negative z-score table for a negative z-score.***). This estimate indicate the harvest that are less than or equal to 300lb.
 
 To see if harvest could be greater than  300lb:
 
 $`P(harvest>0.0968)= 1- 0.0968=0.9032 or 90.32%
-
-***These estimated values are range of values that extends to the tail of the distribution meaning that harvest could be 2000lb or less, 300lb pounds or less.*** 
 
 ## Estimating from Samples
 In a real world scnenario,the whole population might be too large to work with therefore, it's much easier to work with  sample. Any sampling method used must be a representative of the entire population. A minimum of 30 number of samples is needed when z-score is being used for standardization. As long as the sampling method is not biased,  the law of central limit theorem assured us that the sample will be good enough to represent the entire population.
@@ -242,10 +242,10 @@ Level of significance $`\alpha`$ is the probability that the true population mea
 
 $`0.2  level of significance = z_{\frac{\alpha}{2}} = z_{\frac{0.2}{2}}`$
 
-The closest value to 0.1 under the negative z-score table is in the -1.2 row under column 0.08; $`z_{\frac{0.2}{2}}`$ is therefore 1.28 above the mean and -1.28 below the mean. See the table under [confidence interval and confidence level](#Confidence-Interval-and-Confidence-level) above for some estimated alpha $`\alpha`$.
+The closest value to 0.1 under the negative z-score table is in the -1.2 row under column 0.08; $`z_{\frac{0.2}{2}}`$ is therefore 1.28 above the mean and -1.28 below the mean. See the table under [confidence interval and confidence level](#confidence-interval-and-confidence-level) above for some estimated alpha $`\alpha`$.
 
 ## How to Calculate Confidence Interval
-Assuming I want to determiine whether I could achieve a 2000 daily sales of boxes of sugar cookies as the new manager of my store. I might have to use the cookie sales data from my store. While it might be challenging to use the whole population of the cookie sales data, relaying on the law of Central Limit Theorem, I can query the company's database, select at least 30 samples (using z-score), find the mean of the samples, its standard deviation and choose a confidence level. The confidence level is what helps us to determine what the alpha $`(\alpha)`$ will be. 
+Assuming I want to determine whether I could achieve a 2000 daily sales of boxes of sugar cookies as the new manager of my store. I might have to use the cookie sales data from my store. While it might be challenging to use the whole population of the cookie sales data, relaying on the law of Central Limit Theorem, I can query the company's database, select at least 30 samples (for z-score standardization), find the mean of the samples, its standard deviation and choose a confidence level. The confidence level is what helps us to determine what the alpha $`(\alpha)`$ will be. 
 
 $`CI=\bar{x}\pm z_{\frac{\alpha}{2}}\sigma_{\bar{x}}`$
 
@@ -253,7 +253,7 @@ So, for a daily cookie sales of 30 number of samples with mean 1864,  standard d
 
 $`CI=1864\pm 1.96\sigma_{\bar{x}}`$ 
 
-Don't forget that $`\sigma_{\bar{x}}`$ is the standard error which is standard deviation divided by the square root of number of sample $`\sigma_{\bar{x}}`$= $`\frac{s}{\sqrt{n}}`$ using sample standard deviation
+Don't forget that $`\sigma_{\bar{x}}`$ is the standard error which is standard deviation divided by the square root of number of sample $`\sigma_{\bar{x}}`$= $`\frac{s}{\sqrt{n}}`$
 
 $`\sigma_{\bar{x}} = \frac{18}{\sqrt{30}}`$
 
@@ -266,12 +266,18 @@ CI is within = 1864 - 6.45   and  1864 + 6.45
 CI is within = 1857.55  and  1870.45
 
 I am now 95% confidence that the daily sales of boxes of sugar cookie is within intervals 1857.55 and 1870.45; I need to work harder and do things a bit differently to achieve my daily target of 2000 boxes per day. For now, it's not feasible.
-Assuming the higher management of my company said, look, you might have drawn from the most recent data; we use to sell an average of 1900 boxes of cookies per day. To cornfirm that the true mean of the population is 1900, I will have to conduct hypothesis testing.
+
+Assuming the higher management of my company said, look, you might have drawn from the most recent data we use to sell an average of 1900 boxes of cookies per day. To cornfirm that the true mean of the population is 1900, I will have to conduct hypothesis testing.
 
 ## Hypothesis Testing
-Hypothesis testing is conducted to varify the validity of a claim about a population based on a single sample (Bob and Fatma 2016, p.206). There are two tail hypothesis test that are  usually associated with equal to (=) and not equal to ($`\neq`$) and a one tail hypothesis test that are associted with greater than (>), greater than or equal to ($`\geq`$), less than (<), and les than or equal to($`\leq`$) .
+Hypothesis testing is conducted to varify whether a claim is valid or not. Hypothesis test can be stated in two ways:
+
+**1.** The two tail hypothesis test that is stated with equal to (=) or not equal to ($`\neq`$)
+
+**2** The one tail hypothesis test that is associted with greater than (>), greater than or equal to ($`\geq`$), less than (<), and les than or equal to($`\leq`$) .
 
 **Example Usage of Hypothesis Test**
+
 To varify whether the true mean sales of cookie boxes is 1900, assuming that I selected a cookie sale of 42 number of samples and got a mean of 1872 with a standard deviation of 50 if I choose a 95% confidence interval i.e., alpha is 5% and  conducted my test as follows:
 
 **State my hypothesis:** This is a two tail hypothesis because I'm using "equal to"  and "not equal to" to declare my mean.
@@ -290,13 +296,16 @@ $`\sigma_{\bar{x}}=7.7148`$
 
 Therefore, $`z=\frac{1864-1900}{7.7148}`$ = -3.6294.
 
+## Use Z-score to make Judgement about Estimate
 To accept the null hypothsis that the average cookie sale is 1900 boxes per day, the calculated z-score must fall within the region of confidence interval selected which is 95% in this case with $`\alpha`$ of 5% and critical value of -1.96 and 1.96; any z-score value beyond these critical values will be rejected. 
 Since -3.6294 falls beyond -1.96, the null hypothsis must be rejected. I can now categorically say that the  mean sales of cookies is not 1900; at least, not for this current period. The data my colleague is referring to might no longer reflect the current shopping attitude or taste of our customers. I have to go with what the customers want for now.
 
+## Use P-value to make Judgement about Estimate
 Alternatively, I can check the z-score value on the normal distribution table to get the **p-value**. If the p-val is less than or equal  to `$\alpha`$ I will reject the null hypothesis but if it is greater, I will fail to reject the null hypothesis. In this scenario, the probability of z-score -3.6294 is 0.0001; but because my hypothesis is a two-tail test I will double 0.0001 therefore, my p-value is 0.0002 which is less than my alpha of 0.05. Therefore, I will reject the null hypothesis.  
 
 **Hypothesis Test for two different means**
-Let's assume there is theory that says shoppers do not mind buying inorganic bananas because organic bananas are expensive; I doubt it and so quikly become Sherlock Holmes in the malls to investigate the prices of organic and inorganic bananas. I found out that the average price of organic banana per pound across 33 different malls is $0.87 with a standard deviation of 0.23 while that of inorganic is 0.76 with a standard deviation of 0.19. To check whether there is a significant difference between the price of organic and inorganic bananas, I conducted an hypothesis test. 
+
+Let's assume there is a theory that says shoppers buy inorganic bananas because organic bananas are expensive; I doubt it and so quikly become Sherlock Holmes in the malls to investigate the prices of organic and inorganic bananas. I found out that the average price of organic banana per pound across 33 different malls is $0.87 with a standard deviation of 0.23 while that of inorganic is 0.76 with a standard deviation of 0.19. To check whether there is a significant difference between the price of organic and inorganic bananas, I conducted an hypothesis test. 
 
 I stated my hypothesis as:
 
@@ -320,14 +329,14 @@ $`z=\frac{\bar{x}_{1}-\bar{x}_{2}}{\sqrt{\frac{\sigma^2_{1}}{n_{1}}+\frac{\sigma
 
 Therefore, $`\sigma_{\bar{x}_{1}-{\bar{x}_{2}}}=\sqrt{\frac{(0.23)^2}{33}+\frac{(0.19)^2}{33}}`$ = $`\sqrt{\frac{0.0529}{33}+\frac{0.0361}{33}}`$=$`\sqrt{\frac{0.089}{33}}`$ = $`\sqrt{0.002697}`$= 0.052
 
-Now, $`z=frac{0.87-0.76}{0.052}`$ =$`frac{0.11}{0.052}=2.115
+Now, $`z=\frac{0.87-0.76}{0.052}`$ =$`\frac{0.11}{0.052}`$=2.115
 
 If I use a confidence interval of 95% meaning my alpha or level of significance will be 0.05. The critical z-score value for alpha ($`\alpha`$) is between -1.96 and 1.96; the banana z-score (2.115) is outside these ranges, therefore, I will reject the null hypothesis and accept the alternate hypothesis. There is a significant difference between the price of organic and inorganic bananas. 
 
 Using P-val to determine my hypothesis, the probability value of z=2.115 from Normal Distribution table is 0.9826; this represent the probability of values less than or equal to z=2.115. To find the probability of values that are greater than z=2.115, subtract 0.9826 from 1 this equals 0.0174. But because there are two tail regions of alpha, 0.0172 is multiplied by 2 which equals 0.0348.Because my p-val(0.0348) is less than alpha of 0.05 I will reject the null hypothesis and accept the alternate hypothesis. There is indeed a significant difference between the price of organic and inorganic bananas.
 
 ## The T-Distribution
-T-distribution is used when the population standard deviation is unknown and the number of sample (n) is small i.e under 30. The thing is that the population standard devition is rarely known while analysing big data; we rely on the law of [Central Limit Theorem](#the-central-limit-theorem) to analyse the whole population using the sample collected. In a situation where sample is used - the sample mean and standard deviation replace that of the population and the number of sample is small, the t-distribution is a better choice. When using t-distribution it is important to know the [degree of freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)), choose a [confidence level and alpha($`\alpha`$)](https://datatab.net/tutorial/t-distribution).   
+T-distribution is used when the population standard deviation is unknown and the number of sample (n) is small i.e under 30. The thing is that, the population standard devition is rarely known while analysing big data; we rely on the law of [Central Limit Theorem](#the-central-limit-theorem) to analyse the whole population using the samples that are collected. But i a situation where sample is small i.e., less than 30 to be on the saver side (though, some scholars says 25), the t-distribution is a better choice. When using t-distribution it is important to know the [degree of freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)), choose a [confidence level and alpha($`\alpha`$)](https://datatab.net/tutorial/t-distribution).   
 ## How to Calculate Confidence Interval Using the T-Distribution
 Let's say I want to know my chances of seeing a brown dog walking with its owner on the street of Colorado. If I choose 13 county in Colorado and find the mean of brown dogs walking with thier owner to be 14 (I might have exagerated a bit but seriously, Colorado is very dog friendly) with a standard deviation of 3 and I choose a confidence level of 90%; I can calculate the confidence interval as follows:
 
@@ -347,7 +356,7 @@ n=number of sample = 13
 
 $`s_{\bar{x}} = \frac{3}{\sqrt{13}}`$ = $`\frac{3}{3.606}`$ = 0.83
 
-Therefore, confidence interval=$`14\pm (1.782)(0.83)`$ = $`14\pm \approx2 
+Therefore, confidence interval=$`14\pm (1.782)(0.83)`$ = $`14\pm \approx2`$ 
 
 the lower level of the confidence interval = 14 - 2 = 12
 
@@ -414,7 +423,7 @@ $`t=\frac{(9-12)-0}{4.53\sqrt{\frac{1}{19}+\frac{1}{19}}} `$ = $`\frac{(-3)-0}{4
 
 $`t =\frac{-3}{1.47} `$ = -2.04
 
-Using alpha $`\alpha`$ 0.05 and with df = 19+19 -2 = 36. **Note** that the degree freedom 36 is not present on the t-distribution table but because the sample "n" is large, I assume it's gradually approaching normal distribution and therefore round up to 40 instead of rounding down to 30. Therefor, my critical t-statistics will be 40 df under two tail $`\alpha`$ 0.05 = 2.021. My calculated t-statistics -2.04 slightly falls outside the range between my critical t-statistics -2.021 and 2.021. I will still reject the null hypothesis and accept the alternate hypothesis.
+Using alpha $`\alpha`$ 0.05 and with df = 19+19 -2 = 36. **Note** that the degree freedom 36 is not present on the t-distribution table but because the sample "n" is large, I assume it's gradually approaching normal distribution and therefore round up to 40 instead of rounding down to 30. Therefore, my critical t-statistics will be 40 df under two tail $`\alpha`$ 0.05 = 2.021. My calculated t-statistics -2.04 slightly falls outside the range between my critical t-statistics -2.021 and 2.021. I will still reject the null hypothesis and accept the alternate hypothesis.
 
 **2.** The second method to approach t-statistics with two differences in means is to assume that the variances are not equal. So, in this same example of black and brown dogs, I can assume that the variances of the two samples are not equal. With this assumption,the formular below has to be used.
 
@@ -441,15 +450,17 @@ Using $`alpha`$ = 0.05, and rounding my df to 30,my critical t value = 2.042. Si
 
 
 ---
-***Please note that all the data that are used in this analysis are assumed data; none of them is from a real. For further reading, you can check the reference for books that I found helpful.***
+***Please note that all the data that are used in this analysis are assumed data; none of them is real. For further reading, you can check the reference for books that I found helpful.***
 
 ***Reference***
 
-[1] Donnelly B. Jr., Abdel-Raouf F. (2016) "Idiot's Guides Statistics".
+[1] Bob Donnelly Jr. and Fatima Abdel-Raouf (2016) "Idiot's Guides Statistics".
 
-[2] Charles W. (2013) "Naked Statistics".
+[2] Charles Wheelan (2013) "Naked Statistics".
 
-***To be edited and continued!***
+[3] Joseph Schmuller (2016) "Statistical Analysis with Excel"
+
+*** to be continued!***
 
 
 
