@@ -167,7 +167,7 @@ Normal probability distribution is a curve that follows a bell shape. Let's say 
 
 **(4)** Both ends of the curve extend to infinity; starting from 0 (mean) to the right extend to positive infinity while from 0 (mean) to the left extend to negative infinity. The positivity and negativity  indicate that the standdard deviation lies above or below the mean respectively.
 ## The Normal Distribution Curve
-![Probability Density Curve](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/norm11.png)
+![Probability Density Curve](https://github.com/dataglyder/Basic_Statistics_For_Data_Analysis.io/blob/main/norm1.1_resize.png)
 
 ## Standardizing Data with the Z-score
 To use standard normal distribution to make inference about data, the data should be or assumed to be normally distributed i.e. follow the kind of curve described above, then it could be standardized with a z-score. using the formular:
